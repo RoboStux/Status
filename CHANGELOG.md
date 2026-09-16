@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-09-16
+
+### Added
+- `.upptimerc.yml` now also monitors the server hosting RoboStux's services (`tiny1.servers.uk.stux.cloud`) — as both "Server (tiny1)" and "Bot", since the Bot and the underlying server share the same host and instance page — alongside the main website.
+
 ## [1.0.0] - 2026-09-16
 
 ### Changed

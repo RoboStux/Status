@@ -8,6 +8,14 @@ sites:
     url: https://robo.st
     assignees:
       - StuxieDev
+  - name: Server (tiny1)
+    url: https://tiny1.servers.uk.stux.cloud/
+    assignees:
+      - StuxieDev
+  - name: Bot
+    url: https://tiny1.servers.uk.stux.cloud/
+    assignees:
+      - StuxieDev
 
 status-website:
   # NOTE: status.robo.st currently resolves to a different service (Better
