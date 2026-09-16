@@ -8,7 +8,7 @@ sites:
     url: https://robo.st
     assignees:
       - StuxieDev
-  - name: Server (tiny1)
+  - name: Node 1
     url: https://tiny1.servers.uk.stux.cloud/
     assignees:
       - StuxieDev

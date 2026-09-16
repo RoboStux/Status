@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-09-16
+
+### Changed
+- Renamed the "Server (tiny1)" monitored site to "Node 1", and cleared the now-orphaned `server-tiny1` history/api/graphs data (regenerates under the new `node-1` slug on the next run).
+
 ## [1.0.1] - 2026-09-16
 
 ### Added
