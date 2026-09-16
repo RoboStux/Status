@@ -16,6 +16,10 @@ sites:
     url: https://tiny1.servers.uk.stux.cloud/
     assignees:
       - StuxieDev
+  - name: CDN
+    url: https://global.media.robo.st/logo.png
+    assignees:
+      - StuxieDev
 
 status-website:
   # NOTE: status.robo.st currently resolves to a different service (Better
