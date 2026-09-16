@@ -1,0 +1,27 @@
+# Change these first
+owner: RoboStux # Your GitHub username
+repo: Status # Your Github repository name
+
+# Add your sites here
+sites:
+  - name: Website
+    url: https://robo.st
+    assignees:
+      - StuxieDev
+
+status-website:
+  # NOTE: status.robo.st currently resolves to a different service (Better
+  # Uptime) via CNAME - the DNS record needs repointing at GitHub Pages for
+  # this domain to actually serve this site.
+  cname: status.robo.st
+  # logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  name: RoboStux Status
+  introTitle: "Keep track of RoboStux's services here."
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+# Upptime also supports notifications, assigning issues, and more
+# See https://upptime.js.org/docs/configuration
