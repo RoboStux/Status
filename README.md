@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.robo.st/global/logo.png" alt="RoboStux-Status" width="300">
+  <img src="https://global.media.robo.st/logo.png" alt="RoboStux-Status" width="300">
 </p>
 
 # RoboStux-Status
