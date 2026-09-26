@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.6] - 2026-09-26
+
+### Changed
+- Copyright holder in `LICENSE` changed from StuxieDev to Stux.Group
+
 ## [1.0.5] - 2026-09-16
 
 ### Added
