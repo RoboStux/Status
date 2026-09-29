@@ -22,10 +22,10 @@ closed again on recovery, and the status page is published to GitHub Pages at
 
 | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 524 ms |
-| [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 497 ms |
-| [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 498 ms |
-| [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 880 ms |
+| [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 701 ms |
+| [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 628 ms |
+| [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 630 ms |
+| [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 869 ms |
 <!-- githup:end -->
 
 ## Monitors
