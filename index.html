@@ -1,26 +1,1044 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.aa50fcfb.js"}catch(e){main="/client/legacy/client.f6a765f2.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <title>RoboStux Status</title> <script>// If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, light.css will be downloaded with `highest` priority.
-      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-          'beforeend',
-          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
-        );
-      } </script> <link href=https://status.robo.st/themes/light.css rel=stylesheet media=(prefers-color-scheme:light)> <link href=https://status.robo.st/themes/dark.css rel=stylesheet media=(prefers-color-scheme:dark)><link href=https://status.robo.st/global.css rel=stylesheet><link href=https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg rel=icon type=image/svg><link href=/logo-192.png rel=icon type=image/png> <link href=/client/client.aa50fcfb.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-31a52aa5.css rel=preload as=style><link href=/client/index.85b0f73d.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit.2bb33832.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"> <ul class=svelte-a08hsz><li><a href=/ class=svelte-a08hsz target=_self aria-current=page>Status</a> <li><a href=https://github.com/RoboStux/Status class=svelte-a08hsz target=_self>GitHub</a> </li> </ul></div> </nav> <main class=container> <header class=svelte-ngkazm><h1>Keep track of RoboStux's services here.</h1> </header> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <div class="svelte-fqsq6s f changed"><h2>Live Status</h2> <form class="svelte-fqsq6s f r"><div><input class=svelte-fqsq6s id=data_day name=d type=radio value=day><label class=svelte-fqsq6s for=data_day>24h</label></div> <div><input class=svelte-fqsq6s id=data_week name=d type=radio value=week checked><label class=svelte-fqsq6s for=data_week>7d</label></div> <div><input class=svelte-fqsq6s id=data_month name=d type=radio value=month><label class=svelte-fqsq6s for=data_month>30d</label></div> <div><input class=svelte-fqsq6s id=data_year name=d type=radio value=year><label class=svelte-fqsq6s for=data_year>1y</label></div> <div><input class=svelte-fqsq6s id=data_all name=d type=radio value=all><label class=svelte-fqsq6s for=data_all>all</label></div></form></div> <section class="svelte-fqsq6s live-status"><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div></section></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/RoboStux/Status>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
-        if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
-          navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-              registration.unregister();
-            }
-          });
-        }
-        if (typeof window !== "undefined" && "caches" in window) {
-          caches.keys().then(function (keyList) {
-            return Promise.all(
-              keyList.map(function (key) {
-                return caches.delete(key);
-              })
-            );
-          });
-        }
-      } catch (error) {} </script> 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https: data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self' https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'">
+<title>RoboStux Status</title>
+<meta name="description" content="Keep track of RoboStux&#x27;s services here.">
+<meta name="theme-color" content="#a349a4">
+<meta name="generator" content="GitHup 1.0.0">
+<link rel="icon" href="https://global.media.robo.st/icon.png">
+<script>(function(){try{var t=localStorage.getItem('githup-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+:root{
+  --bg:#f6f7f9; --bg-soft:#eef0f3; --card:#ffffff; --border:#dfe3e8; --text:#1f2328; --muted:#59636e;
+  --accent:#a349a4; --accent-strong:#a349a4; --on-accent:#ffffff; --accent-soft:#f0e2f0;
+  --up:#1a7f37; --degraded:#9a6700; --down:#cf222e; --unknown:#6e7781;
+  --lvl-ok:#2da44e; --lvl-degraded:#d4a72c; --lvl-minor:#e16f24; --lvl-major:#cf222e; --lvl-none:#d0d7de;
+  --shadow:0 1px 2px rgba(31,35,40,.06), 0 8px 24px rgba(31,35,40,.06);
+  --radius:14px; color-scheme: light;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ 
+  --bg:#0d1117; --bg-soft:#151b23; --card:#161b22; --border:#2a313c; --text:#e6edf3; --muted:#9198a1;
+  --accent:#b56db6; --accent-strong:#b56db6; --on-accent:#111111; --accent-soft:#392d43;
+  --up:#3fb950; --degraded:#d29922; --down:#f85149; --unknown:#8b949e;
+  --lvl-ok:#2ea043; --lvl-degraded:#bb8009; --lvl-minor:#db6d28; --lvl-major:#da3633; --lvl-none:#30363d;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35);
+  color-scheme: dark;
+ } }
+:root[data-theme="dark"]{ 
+  --bg:#0d1117; --bg-soft:#151b23; --card:#161b22; --border:#2a313c; --text:#e6edf3; --muted:#9198a1;
+  --accent:#b56db6; --accent-strong:#b56db6; --on-accent:#111111; --accent-soft:#392d43;
+  --up:#3fb950; --degraded:#d29922; --down:#f85149; --unknown:#8b949e;
+  --lvl-ok:#2ea043; --lvl-degraded:#bb8009; --lvl-minor:#db6d28; --lvl-major:#da3633; --lvl-none:#30363d;
+  --shadow:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35);
+  color-scheme: dark;
+ }
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 var(--font);min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--accent-strong)}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:8px;background:var(--card);color:var(--text);padding:8px 12px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+.wrap{width:100%;max-width:880px;margin:0 auto;padding:0 16px}
+.dev-banner{background:repeating-linear-gradient(135deg,#ffd33d,#ffd33d 12px,#f0b400 12px,#f0b400 24px);color:#1f2328;text-align:center;font-weight:700;font-size:14px;padding:6px 16px}
+.top{border-bottom:1px solid var(--border);background:var(--card)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-weight:700;font-size:18px;min-width:0}
+.brand img{height:36px;width:auto;max-width:180px;object-fit:contain}
+.brand span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--bg-soft);color:var(--text);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.theme-toggle:hover{border-color:var(--accent)}
+.theme-toggle svg{width:16px;height:16px}
+main.wrap{flex:1;padding-top:28px;padding-bottom:40px}
+.hero{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:var(--radius);background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);border-left:6px solid var(--unknown)}
+.hero h1{margin:0;font-size:clamp(20px,3.6vw,26px);line-height:1.2}
+.hero p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.hero-icon{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:#fff;font-size:22px;background:var(--unknown)}
+.hero.st-up{border-left-color:var(--up)} .hero.st-up .hero-icon{background:var(--up)}
+.hero.st-degraded,.hero.st-partial{border-left-color:var(--degraded)} .hero.st-degraded .hero-icon,.hero.st-partial .hero-icon{background:var(--degraded)}
+.hero.st-down{border-left-color:var(--down)} .hero.st-down .hero-icon{background:var(--down)}
+.intro{color:var(--muted);margin:18px 2px 0}
+h2{font-size:18px;margin:32px 2px 12px}
+.monitors,.inc-list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+.card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.card h3{margin:0;font-size:17px}
+.m-url{display:inline-block;margin-top:2px;color:var(--muted);font-size:13px;word-break:break-all}
+.m-desc{margin:6px 0 0;color:var(--muted);font-size:14px}
+.m-incident{margin:8px 0 0;font-size:14px;font-weight:600}
+.m-incident a{color:var(--down)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.pill.st-up{color:var(--up)} .pill.st-degraded{color:var(--degraded)} .pill.st-down{color:var(--down)} .pill.st-unknown{color:var(--unknown)}
+.pill-icon{font-size:11px}
+.history{margin-top:14px}
+.bars{list-style:none;margin:0;padding:0;display:flex;gap:2px;height:34px;align-items:stretch}
+.bar{flex:1 1 0;min-width:0;border-radius:3px;background:var(--lvl-none);cursor:default;transition:transform .12s ease,opacity .12s}
+.bar:hover,.bar:focus{transform:scaleY(1.12);outline-offset:1px}
+.bar.lvl-ok{background:var(--lvl-ok)} .bar.lvl-degraded{background:var(--lvl-degraded)}
+.bar.lvl-minor{background:var(--lvl-minor)} .bar.lvl-major{background:var(--lvl-major)}
+.bar-scale{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:6px}
+.bar-scale-mid{color:var(--text);font-weight:600}
+.card-foot{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;align-items:start}
+.uptimes{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:0}
+.uptimes div{background:var(--bg-soft);border-radius:10px;padding:8px 6px;text-align:center;min-width:0}
+.uptimes dt{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.uptimes dd{margin:2px 0 0;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums}
+.spark{margin:0}
+.spark svg{display:block;width:100%;height:44px}
+.spark-line{fill:none;stroke:var(--accent);stroke-width:1.8;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.spark-area{fill:var(--accent-soft)}
+.spark-dot{fill:var(--accent)}
+.spark figcaption{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:4px;flex-wrap:wrap}
+.spark-empty{margin:0;color:var(--muted);font-size:13px}
+.avg{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.avg strong{color:var(--text)}
+.last{margin:14px 0 0;font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:10px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 2px 0;padding:0;list-style:none;font-size:13px;color:var(--muted)}
+.legend li{display:inline-flex;align-items:center;gap:6px}
+.swatch{width:12px;height:12px;border-radius:3px;display:inline-block;background:var(--lvl-none)}
+.swatch.lvl-ok{background:var(--lvl-ok)} .swatch.lvl-degraded{background:var(--lvl-degraded)} .swatch.lvl-minor{background:var(--lvl-minor)} .swatch.lvl-major{background:var(--lvl-major)}
+.inc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.inc-open{border-left:5px solid var(--down)}
+.inc-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.inc-head a{font-weight:600;color:var(--text)}
+.inc-meta{margin:6px 0 0;color:var(--muted);font-size:13px}
+.inc-mon{display:inline-block;background:var(--accent-soft);color:var(--text);border-radius:6px;padding:0 6px;margin-right:8px;font-weight:600}
+.muted{color:var(--muted)}
+footer{border-top:1px solid var(--border);background:var(--card);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+footer nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--accent-strong)}
+.powered a{color:var(--text);font-weight:600;text-decoration:none}
+.powered a:hover{text-decoration:underline}
+#tip{position:fixed;z-index:20;pointer-events:none;max-width:260px;background:var(--text);color:var(--bg);font-size:12px;line-height:1.45;padding:8px 10px;border-radius:8px;white-space:pre-line;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+#tip[hidden]{display:none}
+@media (max-width:720px){
+  .card-foot{grid-template-columns:1fr}
+  .bars{gap:1px;height:30px}
+  .bar{border-radius:2px}
+}
+@media (max-width:480px){
+  .uptimes{grid-template-columns:repeat(3,1fr)}
+  .hero{padding:16px}
+  .theme-toggle .tt-text{display:none}
+  .card{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="https://global.media.robo.st/logo.png" alt=""><span>RoboStux Status</span></a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Toggle dark theme"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="tt-text">Dark</span></button>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section id="hero" class="hero st-up" role="status" aria-live="polite" aria-atomic="true">
+    <span class="hero-icon" aria-hidden="true">✔</span>
+    <div>
+      <h1 id="overall-text">All systems operational</h1>
+      <p>Updated <time id="updated" datetime="2026-09-29T12:16:04Z" data-ts="1790684164">2026-09-29 12:16 UTC</time> · refreshes automatically · daily history in UTC</p>
+    </div>
+  </section>
+  <p class="intro">Keep track of RoboStux&#x27;s services here.</p>
+  
+  <section aria-labelledby="monitors-h">
+    <h2 id="monitors-h">Monitors</h2>
+    <ul class="monitors">
+<li class="card st-up" id="m-website" data-slug="website">
+  <div class="card-head">
+    <h3>Website</h3>
+    <span class="pill st-up" data-field="status"><span class="pill-icon" aria-hidden="true">✔</span><span class="pill-text">Operational</span></span>
+  </div>
+  <a class="m-url" href="https://robo.st" rel="noopener">https://robo.st</a><p class="m-desc">The public website</p>
+  <div class="history">
+    <ol class="bars" aria-label="Website: daily history for the last 90 days. Use the arrow keys to move between days."><li class="bar lvl-none" tabindex="-1" data-tip="Thu 02 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 02 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 03 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 03 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 04 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 04 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 05 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 05 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 06 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 06 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 07 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 07 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 08 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 08 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 09 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 09 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 10 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 10 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 11 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 11 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 12 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 12 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 13 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 13 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 14 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 14 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 15 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 15 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 16 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 16 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 17 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 17 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 18 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 18 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 19 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 19 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 20 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 20 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 21 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 21 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 22 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 22 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 23 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 23 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 24 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 24 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 25 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 25 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 26 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 26 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 27 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 27 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 28 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 28 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 29 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 29 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 30 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 30 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 31 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 31 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 01 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 01 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 02 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 02 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 03 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 03 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 04 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 04 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 05 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 05 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 06 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 06 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 07 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 07 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 08 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 08 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 09 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 09 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 10 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 10 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 11 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 11 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 12 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 12 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 13 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 13 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 14 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 14 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 15 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 15 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 16 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 16 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 17 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 17 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 18 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 18 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 19 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 19 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 20 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 20 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 21 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 21 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 22 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 22 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 23 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 23 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 24 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 24 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 25 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 25 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 26 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 26 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 27 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 27 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 28 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 28 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 29 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 29 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 30 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 30 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 31 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 31 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 01 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 01 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 02 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 02 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 03 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 03 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 04 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 04 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 05 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 05 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 06 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 06 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 07 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 07 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 08 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 08 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 09 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 09 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 10 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 10 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 11 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 11 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 12 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 12 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 13 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 13 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 14 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 14 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 15 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 15 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 16 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 16 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 17 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 17 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 18 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 18 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 19 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 19 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 20 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 20 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 21 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 21 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 22 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 22 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 23 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 23 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 24 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 24 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 25 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 25 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 26 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 26 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 27 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 27 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 28 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 28 Sep 2026: No data, No data</span></li><li class="bar lvl-ok" tabindex="0" data-tip="Tue 29 Sep 2026 (UTC)
+Operational
+100.00% uptime · 1 checks · avg 524 ms"><span class="sr-only">Tue 29 Sep 2026: Operational, 100.00% uptime · 1 checks · avg 524 ms</span></li></ol>
+    <div class="bar-scale" aria-hidden="true"><span>90 days ago</span><span class="bar-scale-mid" data-field="uptime.90d-text">100.00% uptime</span><span>Today</span></div>
+  </div>
+  <div class="card-foot">
+    <dl class="uptimes" aria-label="Uptime for Website"><div><dt>24 hours</dt><dd data-field="uptime.24h">100.00%</dd></div><div><dt>7 days</dt><dd data-field="uptime.7d">100.00%</dd></div><div><dt>30 days</dt><dd data-field="uptime.30d">100.00%</dd></div><div><dt>90 days</dt><dd data-field="uptime.90d">100.00%</dd></div><div><dt>All time</dt><dd data-field="uptime.all">100.00%</dd></div></dl>
+    <div class="perf">
+      <p class="spark-empty">Not enough data for a response-time chart yet.</p>
+      <p class="avg">Average response (24 h): <strong data-field="avg_ms.24h">524 ms</strong></p>
+    </div>
+  </div>
+  <p class="last">Last check <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="checked_at">2026-09-29 12:16 UTC</time>: <span data-field="code">HTTP 200</span> in <span data-field="ms">524 ms</span> · Operational since <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="since">2026-09-29 12:16 UTC</time></p>
+</li>
+<li class="card st-up" id="m-node-1" data-slug="node-1">
+  <div class="card-head">
+    <h3>Node 1</h3>
+    <span class="pill st-up" data-field="status"><span class="pill-icon" aria-hidden="true">✔</span><span class="pill-text">Operational</span></span>
+  </div>
+  <a class="m-url" href="https://node1.robo.st/" rel="noopener">https://node1.robo.st/</a><p class="m-desc">The server RoboStux runs on</p>
+  <div class="history">
+    <ol class="bars" aria-label="Node 1: daily history for the last 90 days. Use the arrow keys to move between days."><li class="bar lvl-none" tabindex="-1" data-tip="Thu 02 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 02 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 03 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 03 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 04 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 04 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 05 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 05 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 06 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 06 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 07 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 07 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 08 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 08 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 09 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 09 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 10 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 10 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 11 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 11 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 12 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 12 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 13 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 13 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 14 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 14 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 15 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 15 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 16 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 16 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 17 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 17 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 18 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 18 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 19 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 19 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 20 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 20 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 21 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 21 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 22 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 22 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 23 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 23 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 24 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 24 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 25 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 25 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 26 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 26 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 27 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 27 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 28 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 28 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 29 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 29 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 30 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 30 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 31 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 31 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 01 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 01 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 02 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 02 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 03 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 03 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 04 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 04 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 05 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 05 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 06 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 06 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 07 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 07 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 08 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 08 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 09 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 09 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 10 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 10 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 11 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 11 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 12 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 12 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 13 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 13 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 14 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 14 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 15 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 15 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 16 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 16 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 17 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 17 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 18 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 18 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 19 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 19 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 20 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 20 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 21 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 21 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 22 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 22 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 23 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 23 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 24 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 24 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 25 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 25 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 26 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 26 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 27 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 27 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 28 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 28 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 29 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 29 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 30 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 30 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 31 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 31 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 01 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 01 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 02 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 02 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 03 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 03 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 04 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 04 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 05 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 05 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 06 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 06 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 07 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 07 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 08 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 08 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 09 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 09 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 10 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 10 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 11 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 11 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 12 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 12 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 13 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 13 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 14 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 14 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 15 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 15 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 16 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 16 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 17 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 17 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 18 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 18 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 19 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 19 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 20 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 20 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 21 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 21 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 22 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 22 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 23 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 23 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 24 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 24 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 25 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 25 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 26 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 26 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 27 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 27 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 28 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 28 Sep 2026: No data, No data</span></li><li class="bar lvl-ok" tabindex="0" data-tip="Tue 29 Sep 2026 (UTC)
+Operational
+100.00% uptime · 1 checks · avg 497 ms"><span class="sr-only">Tue 29 Sep 2026: Operational, 100.00% uptime · 1 checks · avg 497 ms</span></li></ol>
+    <div class="bar-scale" aria-hidden="true"><span>90 days ago</span><span class="bar-scale-mid" data-field="uptime.90d-text">100.00% uptime</span><span>Today</span></div>
+  </div>
+  <div class="card-foot">
+    <dl class="uptimes" aria-label="Uptime for Node 1"><div><dt>24 hours</dt><dd data-field="uptime.24h">100.00%</dd></div><div><dt>7 days</dt><dd data-field="uptime.7d">100.00%</dd></div><div><dt>30 days</dt><dd data-field="uptime.30d">100.00%</dd></div><div><dt>90 days</dt><dd data-field="uptime.90d">100.00%</dd></div><div><dt>All time</dt><dd data-field="uptime.all">100.00%</dd></div></dl>
+    <div class="perf">
+      <p class="spark-empty">Not enough data for a response-time chart yet.</p>
+      <p class="avg">Average response (24 h): <strong data-field="avg_ms.24h">497 ms</strong></p>
+    </div>
+  </div>
+  <p class="last">Last check <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="checked_at">2026-09-29 12:16 UTC</time>: <span data-field="code">HTTP 200</span> in <span data-field="ms">497 ms</span> · Operational since <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="since">2026-09-29 12:16 UTC</time></p>
+</li>
+<li class="card st-up" id="m-bot" data-slug="bot">
+  <div class="card-head">
+    <h3>Bot</h3>
+    <span class="pill st-up" data-field="status"><span class="pill-icon" aria-hidden="true">✔</span><span class="pill-text">Operational</span></span>
+  </div>
+  <a class="m-url" href="https://node1.robo.st/health" rel="noopener">https://node1.robo.st/health</a><p class="m-desc">The bot&#x27;s health endpoint (connected and ready)</p>
+  <div class="history">
+    <ol class="bars" aria-label="Bot: daily history for the last 90 days. Use the arrow keys to move between days."><li class="bar lvl-none" tabindex="-1" data-tip="Thu 02 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 02 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 03 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 03 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 04 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 04 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 05 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 05 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 06 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 06 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 07 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 07 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 08 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 08 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 09 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 09 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 10 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 10 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 11 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 11 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 12 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 12 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 13 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 13 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 14 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 14 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 15 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 15 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 16 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 16 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 17 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 17 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 18 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 18 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 19 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 19 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 20 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 20 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 21 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 21 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 22 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 22 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 23 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 23 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 24 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 24 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 25 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 25 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 26 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 26 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 27 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 27 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 28 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 28 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 29 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 29 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 30 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 30 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 31 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 31 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 01 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 01 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 02 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 02 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 03 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 03 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 04 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 04 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 05 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 05 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 06 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 06 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 07 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 07 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 08 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 08 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 09 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 09 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 10 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 10 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 11 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 11 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 12 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 12 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 13 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 13 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 14 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 14 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 15 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 15 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 16 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 16 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 17 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 17 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 18 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 18 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 19 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 19 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 20 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 20 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 21 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 21 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 22 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 22 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 23 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 23 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 24 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 24 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 25 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 25 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 26 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 26 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 27 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 27 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 28 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 28 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 29 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 29 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 30 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 30 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 31 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 31 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 01 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 01 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 02 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 02 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 03 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 03 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 04 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 04 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 05 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 05 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 06 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 06 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 07 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 07 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 08 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 08 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 09 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 09 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 10 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 10 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 11 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 11 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 12 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 12 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 13 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 13 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 14 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 14 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 15 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 15 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 16 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 16 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 17 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 17 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 18 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 18 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 19 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 19 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 20 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 20 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 21 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 21 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 22 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 22 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 23 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 23 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 24 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 24 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 25 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 25 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 26 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 26 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 27 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 27 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 28 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 28 Sep 2026: No data, No data</span></li><li class="bar lvl-ok" tabindex="0" data-tip="Tue 29 Sep 2026 (UTC)
+Operational
+100.00% uptime · 1 checks · avg 498 ms"><span class="sr-only">Tue 29 Sep 2026: Operational, 100.00% uptime · 1 checks · avg 498 ms</span></li></ol>
+    <div class="bar-scale" aria-hidden="true"><span>90 days ago</span><span class="bar-scale-mid" data-field="uptime.90d-text">100.00% uptime</span><span>Today</span></div>
+  </div>
+  <div class="card-foot">
+    <dl class="uptimes" aria-label="Uptime for Bot"><div><dt>24 hours</dt><dd data-field="uptime.24h">100.00%</dd></div><div><dt>7 days</dt><dd data-field="uptime.7d">100.00%</dd></div><div><dt>30 days</dt><dd data-field="uptime.30d">100.00%</dd></div><div><dt>90 days</dt><dd data-field="uptime.90d">100.00%</dd></div><div><dt>All time</dt><dd data-field="uptime.all">100.00%</dd></div></dl>
+    <div class="perf">
+      <p class="spark-empty">Not enough data for a response-time chart yet.</p>
+      <p class="avg">Average response (24 h): <strong data-field="avg_ms.24h">498 ms</strong></p>
+    </div>
+  </div>
+  <p class="last">Last check <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="checked_at">2026-09-29 12:16 UTC</time>: <span data-field="code">HTTP 200</span> in <span data-field="ms">498 ms</span> · Operational since <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="since">2026-09-29 12:16 UTC</time></p>
+</li>
+<li class="card st-up" id="m-cdn" data-slug="cdn">
+  <div class="card-head">
+    <h3>CDN</h3>
+    <span class="pill st-up" data-field="status"><span class="pill-icon" aria-hidden="true">✔</span><span class="pill-text">Operational</span></span>
+  </div>
+  <a class="m-url" href="https://global.media.robo.st/logo.png" rel="noopener">https://global.media.robo.st/logo.png</a><p class="m-desc">The media CDN</p>
+  <div class="history">
+    <ol class="bars" aria-label="CDN: daily history for the last 90 days. Use the arrow keys to move between days."><li class="bar lvl-none" tabindex="-1" data-tip="Thu 02 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 02 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 03 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 03 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 04 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 04 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 05 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 05 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 06 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 06 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 07 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 07 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 08 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 08 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 09 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 09 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 10 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 10 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 11 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 11 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 12 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 12 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 13 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 13 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 14 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 14 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 15 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 15 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 16 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 16 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 17 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 17 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 18 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 18 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 19 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 19 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 20 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 20 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 21 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 21 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 22 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 22 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 23 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 23 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 24 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 24 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 25 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 25 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 26 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 26 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 27 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 27 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 28 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 28 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 29 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 29 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 30 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 30 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 31 Jul 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 31 Jul 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 01 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 01 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 02 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 02 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 03 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 03 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 04 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 04 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 05 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 05 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 06 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 06 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 07 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 07 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 08 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 08 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 09 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 09 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 10 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 10 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 11 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 11 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 12 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 12 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 13 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 13 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 14 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 14 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 15 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 15 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 16 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 16 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 17 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 17 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 18 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 18 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 19 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 19 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 20 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 20 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 21 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 21 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 22 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 22 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 23 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 23 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 24 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 24 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 25 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 25 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 26 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 26 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 27 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 27 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 28 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 28 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 29 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 29 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 30 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 30 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 31 Aug 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 31 Aug 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 01 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 01 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 02 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 02 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 03 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 03 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 04 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 04 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 05 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 05 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 06 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 06 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 07 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 07 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 08 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 08 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 09 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 09 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 10 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 10 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 11 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 11 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 12 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 12 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 13 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 13 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 14 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 14 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 15 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 15 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 16 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 16 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 17 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 17 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 18 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 18 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 19 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 19 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 20 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 20 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 21 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 21 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Tue 22 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Tue 22 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Wed 23 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Wed 23 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Thu 24 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Thu 24 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Fri 25 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Fri 25 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sat 26 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sat 26 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Sun 27 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Sun 27 Sep 2026: No data, No data</span></li><li class="bar lvl-none" tabindex="-1" data-tip="Mon 28 Sep 2026 (UTC)
+No data
+No data"><span class="sr-only">Mon 28 Sep 2026: No data, No data</span></li><li class="bar lvl-ok" tabindex="0" data-tip="Tue 29 Sep 2026 (UTC)
+Operational
+100.00% uptime · 1 checks · avg 880 ms"><span class="sr-only">Tue 29 Sep 2026: Operational, 100.00% uptime · 1 checks · avg 880 ms</span></li></ol>
+    <div class="bar-scale" aria-hidden="true"><span>90 days ago</span><span class="bar-scale-mid" data-field="uptime.90d-text">100.00% uptime</span><span>Today</span></div>
+  </div>
+  <div class="card-foot">
+    <dl class="uptimes" aria-label="Uptime for CDN"><div><dt>24 hours</dt><dd data-field="uptime.24h">100.00%</dd></div><div><dt>7 days</dt><dd data-field="uptime.7d">100.00%</dd></div><div><dt>30 days</dt><dd data-field="uptime.30d">100.00%</dd></div><div><dt>90 days</dt><dd data-field="uptime.90d">100.00%</dd></div><div><dt>All time</dt><dd data-field="uptime.all">100.00%</dd></div></dl>
+    <div class="perf">
+      <p class="spark-empty">Not enough data for a response-time chart yet.</p>
+      <p class="avg">Average response (24 h): <strong data-field="avg_ms.24h">880 ms</strong></p>
+    </div>
+  </div>
+  <p class="last">Last check <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="checked_at">2026-09-29 12:16 UTC</time>: <span data-field="code">HTTP 200</span> in <span data-field="ms">880 ms</span> · Operational since <time datetime="2026-09-29T12:16:03Z" data-ts="1790684163" data-field="since">2026-09-29 12:16 UTC</time></p>
+</li>
+    </ul>
+    <ul class="legend" aria-label="History colour key"><li><span class="swatch lvl-ok" aria-hidden="true"></span>Operational</li><li><span class="swatch lvl-degraded" aria-hidden="true"></span>Slow responses</li><li><span class="swatch lvl-minor" aria-hidden="true"></span>Some downtime</li><li><span class="swatch lvl-major" aria-hidden="true"></span>Major outage</li><li><span class="swatch lvl-none" aria-hidden="true"></span>No data</li></ul>
+  </section>
+  <section class="recent" aria-labelledby="recent-h"><h2 id="recent-h">Recent incidents</h2><p class="muted">No incidents in the last 90 days.</p></section>
+</main>
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><ul><li><a href="https://robo.st">RoboStux</a></li><li><a href="https://github.com/RoboStux/Status">GitHub</a></li><li><a href="https://robo.st/legal">Boring Legal Stuff</a></li></ul></nav>
+    <p class="powered"><a href="https://github.com/StuxGroup/GitHup">Powered by GitHup · Stux.Group</a></p>
+  </div>
+</footer>
+<div id="tip" role="tooltip" hidden></div>
+<script type="application/json" id="githup-config">{"refresh": 60, "live": "https://raw.githubusercontent.com/RoboStux/Status/main/data/summary.json", "updated": 1790684164, "version": "1.0.0"}</script>
+<script>
+(function(){
+  'use strict';
+  var root=document.documentElement, cfg={};
+  try{cfg=JSON.parse(document.getElementById('githup-config').textContent);}catch(e){}
+
+  /* theme toggle */
+  var btn=document.getElementById('theme-toggle');
+  var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+  function effective(){var t=root.getAttribute('data-theme');if(t==='light'||t==='dark')return t;return mq&&mq.matches?'dark':'light';}
+  function syncToggle(){if(!btn)return;var dark=effective()==='dark';btn.setAttribute('aria-pressed',dark?'true':'false');
+    btn.setAttribute('aria-label','Switch to '+(dark?'light':'dark')+' theme');btn.querySelector('.tt-text').textContent=dark?'Light':'Dark';}
+  if(btn){btn.addEventListener('click',function(){var next=effective()==='dark'?'light':'dark';root.setAttribute('data-theme',next);
+    try{localStorage.setItem('githup-theme',next);}catch(e){}syncToggle();});}
+  if(mq&&mq.addEventListener)mq.addEventListener('change',syncToggle);
+  syncToggle();
+
+  /* relative times */
+  function ago(ts){var s=Math.round(Date.now()/1000-ts);if(s<45)return 'just now';var m=Math.round(s/60);if(m<60)return m+' min ago';
+    var h=Math.round(m/60);if(h<48)return h+' h ago';return Math.round(h/24)+' days ago';}
+  function tick(){var els=document.querySelectorAll('time[data-ts]');for(var i=0;i<els.length;i++){var ts=+els[i].getAttribute('data-ts');
+    if(!ts)continue;var d=new Date(ts*1000);els[i].textContent=ago(ts);els[i].title=d.toLocaleString();}}
+  tick();setInterval(tick,30000);
+
+  /* bar tooltips + keyboard navigation */
+  var tip=document.getElementById('tip');
+  function place(el){var r=el.getBoundingClientRect();tip.hidden=false;var tw=tip.offsetWidth,th=tip.offsetHeight;
+    var x=Math.min(Math.max(8,r.left+r.width/2-tw/2),window.innerWidth-tw-8);var y=r.top-th-8;if(y<8)y=r.bottom+8;
+    tip.style.left=x+'px';tip.style.top=y+'px';}
+  function show(el){tip.textContent=el.getAttribute('data-tip');place(el);}
+  function hide(){tip.hidden=true;}
+  var lists=document.querySelectorAll('.bars');
+  for(var i=0;i<lists.length;i++){(function(list){
+    list.addEventListener('mouseover',function(e){var li=e.target.closest('.bar');if(li)show(li);});
+    list.addEventListener('mouseleave',hide);
+    list.addEventListener('focusin',function(e){var li=e.target.closest('.bar');if(li)show(li);});
+    list.addEventListener('focusout',hide);
+    list.addEventListener('keydown',function(e){var li=e.target.closest('.bar');if(!li)return;var bars=list.querySelectorAll('.bar');
+      var idx=Array.prototype.indexOf.call(bars,li),next=idx;
+      if(e.key==='ArrowLeft')next=idx-1;else if(e.key==='ArrowRight')next=idx+1;else if(e.key==='Home')next=0;else if(e.key==='End')next=bars.length-1;
+      else if(e.key==='Escape'){hide();return;}else return;
+      e.preventDefault();next=Math.max(0,Math.min(bars.length-1,next));li.tabIndex=-1;bars[next].tabIndex=0;bars[next].focus();});
+  })(lists[i]);}
+  window.addEventListener('scroll',hide,{passive:true});
+
+  /* live refresh from summary.json */
+  var TEXT={up:'Operational',degraded:'Degraded',down:'Down'};
+  var ICON={up:'✔',degraded:'▲',down:'✖',partial:'▲',unknown:'•'};
+  var OVERALL={up:'All systems operational',degraded:'Degraded performance',partial:'Partial outage',down:'Major outage',unknown:'No data yet'};
+  function pct(v){if(v===null||v===undefined)return 'n/a';return (Math.floor(v*100+1e-9)/100).toFixed(2)+'%';}
+  function ms(v){return v===null||v===undefined?'n/a':v.toLocaleString('en')+' ms';}
+  function setStatusClass(el,s){el.className=el.className.replace(/\bst-[a-z]+\b/g,'').trim()+' st-'+s;}
+  function apply(s){
+    if(!s||!s.monitors||(cfg.updated&&s.updated<cfg.updated))return;
+    cfg.updated=s.updated;
+    var hero=document.getElementById('hero');
+    if(hero){setStatusClass(hero,s.status||'unknown');document.getElementById('overall-text').textContent=OVERALL[s.status]||OVERALL.unknown;
+      hero.querySelector('.hero-icon').textContent=ICON[s.status]||ICON.unknown;
+      var up=document.getElementById('updated');if(up){up.setAttribute('data-ts',s.updated);}}
+    s.monitors.forEach(function(m){var card=document.getElementById('m-'+m.slug);if(!card)return;var st=m.status||'unknown';
+      setStatusClass(card,st);var pill=card.querySelector('[data-field="status"]');
+      if(pill){setStatusClass(pill,st);pill.querySelector('.pill-text').textContent=TEXT[m.status]||'No data';pill.querySelector('.pill-icon').textContent=ICON[st]||'';}
+      ['24h','7d','30d','90d','all'].forEach(function(k){var el=card.querySelector('[data-field="uptime.'+k+'"]');if(el&&m.uptime)el.textContent=pct(m.uptime[k]);});
+      var t=card.querySelector('[data-field="uptime.90d-text"]');if(t&&m.uptime)t.textContent=pct(m.uptime['90d'])+' uptime';
+      var a=card.querySelector('[data-field="avg_ms.24h"]');if(a&&m.avg_ms)a.textContent=ms(m.avg_ms['24h']);
+      var c=card.querySelector('[data-field="code"]');if(c)c.textContent=m.code?'HTTP '+m.code:'no response';
+      var r=card.querySelector('[data-field="ms"]');if(r)r.textContent=ms(m.ms);
+      var ca=card.querySelector('[data-field="checked_at"]');if(ca&&m.checked_at)ca.setAttribute('data-ts',m.checked_at);
+    });
+    tick();
+  }
+  function get(url){return fetch(url+(url.indexOf('?')<0?'?':'&')+'t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();});}
+  function refresh(){if(document.hidden)return;var p=cfg.live?get(cfg.live).catch(function(){return get('summary.json');}):get('summary.json');p.then(apply).catch(function(){});}
+  if(cfg.refresh>0&&window.fetch){setInterval(refresh,cfg.refresh*1000);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh();});}
+})();
+</script>
+</body>
+</html>
