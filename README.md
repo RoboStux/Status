@@ -21,12 +21,12 @@ at [status.robo.st/changelogs/](https://status.robo.st/changelogs/).
 
 **All systems operational** · [Live status page](https://status.robo.st/)
 
-| Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
-| ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 1231 ms |
-| [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 598 ms |
-| [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 598 ms |
-| [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 744 ms |
+| Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
+| ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
+| Web | [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 1364 ms |
+| Web | [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 762 ms |
+| Bot | [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 628 ms |
+| Bot | [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 628 ms |
 <!-- githup:end -->
 
 ## Monitors
