@@ -18,14 +18,14 @@ closed again on recovery, and the status page is published to GitHub Pages at
 <!-- githup:start -->
 <!-- This table is written by GitHup (https://github.com/StuxGroup/GitHup); edits here are overwritten. -->
 
-**Degraded performance** · [Live status page](https://status.robo.st/)
+**All systems operational** · [Live status page](https://status.robo.st/)
 
 | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| [Website](https://robo.st) | Degraded | 100.00% | 100.00% | 100.00% | 1148 ms |
+| [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 1231 ms |
 | [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 598 ms |
-| [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 596 ms |
-| [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 748 ms |
+| [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 598 ms |
+| [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 744 ms |
 <!-- githup:end -->
 
 ## Monitors
