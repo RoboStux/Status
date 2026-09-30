@@ -28,6 +28,9 @@ for arg in "$@"; do
     esac
 done
 
+if [ -z "${GITHUP_DIR:-}" ] && [ -f "$DIR/../../Stux.Group/GitHup/githup/__init__.py" ]; then
+    GITHUP_DIR="$DIR/../../Stux.Group/GitHup"   # the local GitHup checkout, if there is one
+fi
 GITHUP_DIR="${GITHUP_DIR:-$DIR/.githup-cache}"
 if [ ! -d "$GITHUP_DIR/githup" ]; then
     echo "Fetching GitHup into $GITHUP_DIR"
@@ -48,6 +51,12 @@ else
 fi
 # GitHup empties its output folder, so site/ (/changelogs) and the changelog files go on top after.
 cp -r site/. CHANGELOG.md VERSION.md .dev/site/
+
+# The hand-made pages (site/) show the shared dev banner when assets/dev-mode.js says so; the
+# committed copy says false, so only this local build gets true.
+if [ "$DEV_MODE" = "1" ]; then
+    echo "window.DEV_MODE = true;" > ".dev/site/assets/dev-mode.js"
+fi
 
 echo "RoboStux Status (DEV_MODE=$DEV_MODE) at http://127.0.0.1:$PORT"
 "$PY" -m http.server "$PORT" --bind 127.0.0.1 --directory .dev/site

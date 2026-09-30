@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-09-30
+
+### Added
+
+- A **Created with** line in the footer of the hand-made `/changelogs/` page: a heart, code brackets and a coffee mug, by StuxieDev
+
+### Changed
+
+- The dev-mode banner on the hand-made pages is the shared Stux site banner: a muted strip in the page's colours with a label chip and a faint icon pattern, replacing the yellow hazard stripes. It stays at the top and pushes the page down by its exact height, so it never covers anything, including on phones. In dev mode, `?banner=soon,maintenance,site` previews the other banner styles
+- The dev banner is switched on by `dev-server.sh`/`.bat` (they write `assets/dev-mode.js` into the local build) instead of by looking at the hostname, so `--no-dev-mode` now hides it everywhere; the old `?nodev=1` is gone
+- The footer's **Powered by GitHup** and service links are muted until hovered or focused, and footer logos are 28px and fade in without the hover glitch (the same filter functions in every state)
+- `dev-server.sh`/`.bat` use a local GitHup checkout (`../GitHup` or `../../Stux.Group/GitHup`) when there is one, so local previews show the newest GitHup
+- Needs GitHup v1.5.0 for the status page's own new banner and muted footer (it's picked up through `StuxGroup/GitHup@v1`)
+
 ## [1.1.0] - 2026-09-30
 
 ### Added

@@ -33,6 +33,8 @@ goto args
 
 :run
 cd /d "%DIR%"
+REM The local GitHup checkout, if there is one, else a v1 clone.
+if "%GITHUP_DIR%"=="" if exist "%DIR%..\..\Stux.Group\GitHup\githup\__init__.py" set "GITHUP_DIR=%DIR%..\..\Stux.Group\GitHup"
 if "%GITHUP_DIR%"=="" set "GITHUP_DIR=%DIR%.githup-cache"
 if not exist "%GITHUP_DIR%\githup" (
     echo Fetching GitHup into %GITHUP_DIR%
@@ -50,6 +52,9 @@ REM GitHup empties its output folder, so site\ (/changelogs) and the changelog f
 xcopy site .dev\site\ /e /i /q /y >nul || exit /b 1
 copy /y CHANGELOG.md .dev\site\ >nul || exit /b 1
 copy /y VERSION.md .dev\site\ >nul || exit /b 1
+REM The hand-made pages (site\) show the shared dev banner when assets\dev-mode.js says so; the
+REM committed copy says false, so only this local build gets true.
+if "%DEV_MODE%"=="1" (echo window.DEV_MODE = true;) > ".dev\site\assets\dev-mode.js"
 
 echo RoboStux Status (DEV_MODE=%DEV_MODE%) at http://127.0.0.1:%PORT%
 python -m http.server %PORT% --bind 127.0.0.1 --directory .dev/site
