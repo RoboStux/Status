@@ -7,8 +7,9 @@ REM   --no-dev-mode   render the page exactly as production would (no DEV MODE b
 REM   --demo          build from generated example data instead of data\
 REM
 REM Builds the status page with GitHup from this repo's .githup.yml and data\
-REM into .dev\site, then serves it with python -m http.server. DEV_MODE is on
-REM by default so the page shows the dev-only banner.
+REM into .dev\site, adds site\ (/changelogs), CHANGELOG.md and VERSION.md, then
+REM serves it with python -m http.server. DEV_MODE is on by default so the page
+REM shows the dev-only banner.
 REM
 REM Needs a GitHup checkout: set GITHUP_DIR to one, or this clones
 REM https://github.com/StuxGroup/GitHup (tag v1) into .githup-cache\.
@@ -45,6 +46,10 @@ if "%DEMO%"=="1" (
 ) else (
     python -m githup site --config .githup.yml --data-dir data --out .dev/site --no-deploy --no-issues || exit /b 1
 )
+REM GitHup empties its output folder, so site\ (/changelogs) and the changelog files go on top after.
+xcopy site .dev\site\ /e /i /q /y >nul || exit /b 1
+copy /y CHANGELOG.md .dev\site\ >nul || exit /b 1
+copy /y VERSION.md .dev\site\ >nul || exit /b 1
 
 echo RoboStux Status (DEV_MODE=%DEV_MODE%) at http://127.0.0.1:%PORT%
 python -m http.server %PORT% --bind 127.0.0.1 --directory .dev/site

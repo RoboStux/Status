@@ -6,8 +6,9 @@
 #   --demo          build from generated example data instead of data/
 #
 # Builds the status page with GitHup from this repo's .githup.yml and data/
-# into .dev/site, then serves it with python -m http.server. DEV_MODE is on
-# by default so the page shows the dev-only banner.
+# into .dev/site, adds site/ (/changelogs), CHANGELOG.md and VERSION.md, then
+# serves it with python -m http.server. DEV_MODE is on by default so the page
+# shows the dev-only banner.
 #
 # Needs a GitHup checkout: set GITHUP_DIR to one, or this clones
 # https://github.com/StuxGroup/GitHup (tag v1) into .githup-cache/.
@@ -45,6 +46,8 @@ if [ "$DEMO" = 1 ]; then
 else
     "$PY" -m githup site --config .githup.yml --data-dir "$DATA" --out .dev/site --no-deploy --no-issues
 fi
+# GitHup empties its output folder, so site/ (/changelogs) and the changelog files go on top after.
+cp -r site/. CHANGELOG.md VERSION.md .dev/site/
 
 echo "RoboStux Status (DEV_MODE=$DEV_MODE) at http://127.0.0.1:$PORT"
 "$PY" -m http.server "$PORT" --bind 127.0.0.1 --directory .dev/site

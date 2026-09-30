@@ -9,6 +9,8 @@ site:
   cname: status.robo.st
   accent: "#a349a4"
   legal: https://robo.st/legal
+  # The footer's first link: this repo's version (from VERSION.md), pointing at the changelogs.
+  changelog: https://status.robo.st/changelogs/
   footer_links:
     - label: RoboStux
       url: https://robo.st
@@ -24,27 +26,35 @@ incidents:
   enabled: true
   assignees: [StuxieDev]
 
-monitors:
-  - name: Website
-    slug: website
-    url: https://robo.st
-    description: The public website
+# Shown as sections on the page, each with a combined status. Slugs are set
+# explicitly, so moving a monitor between groups keeps its history.
+groups:
+  - name: Web
+    description: The RoboStux website and its media.
+    monitors:
+      - name: Website
+        slug: website
+        url: https://robo.st
+        description: The public website
 
-  # The server RoboStux runs on: nginx answers 200 at `/`.
-  - name: Node 1
-    slug: node-1
-    url: https://node1.robo.st/
-    description: The server RoboStux runs on
+      - name: CDN
+        slug: cdn
+        url: https://global.media.robo.st/logo.png
+        description: The media CDN
 
-  # RoboStux's own health endpoint (proxied by nginx): 200 once the bot is
-  # connected and ready, 503 while it's starting or has lost the gateway.
   - name: Bot
-    slug: bot
-    url: https://node1.robo.st/health
-    expected: [200]
-    description: The bot's health endpoint (connected and ready)
+    description: The server RoboStux runs on, and the bot itself.
+    monitors:
+      # The server RoboStux runs on: nginx answers 200 at `/`.
+      - name: Node 1
+        slug: node-1
+        url: https://node1.robo.st/
+        description: The server RoboStux runs on
 
-  - name: CDN
-    slug: cdn
-    url: https://global.media.robo.st/logo.png
-    description: The media CDN
+      # RoboStux's own health endpoint (proxied by nginx): 200 once the bot is
+      # connected and ready, 503 while it's starting or has lost the gateway.
+      - name: Bot
+        slug: bot
+        url: https://node1.robo.st/health
+        expected: [200]
+        description: The bot's health endpoint (connected and ready)

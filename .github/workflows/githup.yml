@@ -1,5 +1,7 @@
 # RoboStux Status: uptime checks and the status page at status.robo.st,
-# powered by GitHup (https://github.com/StuxGroup/GitHup).
+# powered by GitHup (https://github.com/StuxGroup/GitHup). The page is built
+# into _site with site/ (/changelogs) and the changelog files on top, then
+# deployed with actions/deploy-pages (Settings -> Pages -> Source: GitHub Actions).
 name: GitHup
 
 on:
@@ -12,10 +14,15 @@ on:
     paths:
       - .githup.yml
       - .github/workflows/githup.yml
+      - site/**
+      - CHANGELOG.md
+      - VERSION.md
 
 permissions:
-  contents: write   # commit data, push the gh-pages branch
+  contents: write   # commit data and the README table
   issues: write     # open and close incident issues
+  pages: write      # deploy to GitHub Pages
+  id-token: write
 
 # One run at a time so data commits never race each other.
 concurrency:
@@ -29,7 +36,7 @@ jobs:
     outputs:
       changed: ${{ steps.check.outputs.status-changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
       - id: check
@@ -48,13 +55,29 @@ jobs:
       )
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}  # includes the data just committed
-      - uses: StuxGroup/GitHup@v1
+      - uses: actions/configure-pages@v6
+      - name: Update the status table in the README
+        uses: StuxGroup/GitHup@v1
         with:
           mode: readme
-      - uses: StuxGroup/GitHup@v1
+      # GitHup empties site-dir before building, so the status page goes in first.
+      - name: Build the status page
+        uses: StuxGroup/GitHup@v1
         with:
           mode: site
+          deploy: "false"
+          site-dir: _site
+      - name: Add /changelogs and the changelog files
+        run: cp -r site/. CHANGELOG.md VERSION.md _site/
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v5

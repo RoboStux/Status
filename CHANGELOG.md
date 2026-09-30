@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-09-30
+
+### Added
+- A **Changelogs** page at `status.robo.st/changelogs/` with two tabs: this status page's own changelog (with its version) and GitHup's (read live from its `v1` release), with each release's sections sorted into a fixed order and coloured type badges; `/changelogs/#githup` opens the GitHup tab, and `/changelog/` redirects to `/changelogs/`, keeping the `#tab`
+- `site/`, holding the changelogs page and its styles, published with the status page along with `CHANGELOG.md` and `VERSION.md`
+
+### Changed
+- Monitors are grouped on the status page and in the README table, using GitHup v1.4.0's `groups`: **Web** (Website, CDN) and **Bot** (Node 1, Bot); slugs are unchanged, so every monitor keeps its history
+- The status page footer's first link is now this page's version (`v1.1.0`), linking to `/changelogs/` (GitHup v1.4.0's `site.changelog`), and the footer shows the GitHup version that built the page
+- The page is now deployed with `actions/deploy-pages` (GitHup builds it into `_site` with `deploy: "false"`, then `site/` and the changelog files are copied on top) instead of GitHup pushing a `gh-pages` branch, so the repository's Pages source must be **GitHub Actions**; pushes that change `site/`, `CHANGELOG.md` or `VERSION.md` rebuild the page
+- The workflow uses `actions/checkout@v7`
+- `dev-server.sh`/`dev-server.bat` copy `site/`, `CHANGELOG.md` and `VERSION.md` onto the built page, like the workflow
+
 ## [1.0.0] - 2026-09-29
 
 The first release of RoboStux's status page under a fresh version history. Earlier versions and their tags have been retired.

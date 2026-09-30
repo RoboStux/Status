@@ -11,7 +11,8 @@
 GitHub Actions checks every service every 5 minutes. Results are stored as JSON in
 [`data/`](data), outages open an [Issue](https://github.com/RoboStux/Status/issues) that is
 closed again on recovery, and the status page is published to GitHub Pages at
-[status.robo.st](https://status.robo.st).
+[status.robo.st](https://status.robo.st), with the release history of this page and of GitHup
+at [status.robo.st/changelogs/](https://status.robo.st/changelogs/).
 
 ## Current status
 
@@ -30,15 +31,24 @@ closed again on recovery, and the status page is published to GitHub Pages at
 
 ## Monitors
 
-| Monitor | URL                                     | Checks                                                                             |
-| ------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
-| Website | `https://robo.st`                       | The public website                                                                 |
-| Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
-| Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
-| CDN     | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
+| Group | Monitor | URL                                     | Checks                                                                             |
+| ----- | ------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+| Web   | Website | `https://robo.st`                       | The public website                                                                 |
+| Web   | CDN     | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
+| Bot   | Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
+| Bot   | Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
 
 Every monitor counts any 200-399 answer as up, except Bot, where only a 200 counts. Answers
-slower than 3 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml).
+slower than 3 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
+in two groups that the status page shows as sections, each with a combined status.
+
+## How it's published
+
+`.github/workflows/githup.yml` builds the status page into `_site` with GitHup, copies
+[`site/`](site) (the `/changelogs/` page and its styles), `CHANGELOG.md` and `VERSION.md` on
+top and deploys it with `actions/deploy-pages`, so the repository's **Settings → Pages →
+Source** must be **GitHub Actions**, with `status.robo.st` as the custom domain. Preview it all
+locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
 
 ## Author
 
