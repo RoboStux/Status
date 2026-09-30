@@ -19,14 +19,14 @@ at [status.robo.st/changelogs/](https://status.robo.st/changelogs/).
 <!-- githup:start -->
 <!-- This table is written by GitHup (https://github.com/StuxGroup/GitHup); edits here are overwritten. -->
 
-**Degraded performance** · [Live status page](https://status.robo.st/)
+**All systems operational** · [Live status page](https://status.robo.st/)
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Web | [Website](https://robo.st) | Degraded | 100.00% | 100.00% | 100.00% | 1746 ms |
-| Web | [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 772 ms |
-| Bot | [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 631 ms |
-| Bot | [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 631 ms |
+| Web | [Website](https://robo.st) | Up | 100.00% | 100.00% | 100.00% | 1795 ms |
+| Web | [CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 803 ms |
+| Bot | [Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 654 ms |
+| Bot | [Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 653 ms |
 <!-- githup:end -->
 
 ## Monitors
