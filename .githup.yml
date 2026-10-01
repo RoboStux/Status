@@ -22,7 +22,7 @@ legal:
   effective: 1 October 2026
 
 defaults:
-  timeout: 10
+  timeout: 15
   retries: 2
   max_response_time: 15000  # ms; GitHup's default. Slower (but otherwise good) answers show as degraded
 

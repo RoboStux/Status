@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.6
+
+### Changed
+
+- `timeout` raised from 10 to 15 seconds per attempt, matching the 15-second `max_response_time` and GitHup's new defaults
+
 ## v1.3.5
 
 ### Changed
