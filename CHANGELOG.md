@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.5
+
+### Changed
+
+- `max_response_time` raised to 15 seconds (GitHup's new default), so a slow but working site is no longer shown as degraded
+
 ## [1.3.4] - 2026-10-01
 
 ### Added

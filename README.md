@@ -40,7 +40,7 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 | Bot   | Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
 
 Every monitor counts any 200-399 answer as up, except Bot, where only a 200 counts. Answers
-slower than 3 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
+slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
 in two groups that the status page shows as sections, each with a combined status.
 
 ## How it's published
