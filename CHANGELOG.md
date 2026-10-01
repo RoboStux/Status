@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.3.2] - 2026-10-01
+
+### Removed
+
+- The copyright line in the status page footer: `site.copyright` is no longer set, as status pages don't need one
+
 ## [1.3.1] - 2026-10-01
 
 ### Added
