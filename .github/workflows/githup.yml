@@ -1,6 +1,6 @@
 # RoboStux Status: uptime checks and the status page at status.robo.st,
 # powered by GitHup (https://github.com/StuxGroup/GitHup). The page is built
-# into _site with site/ (/changelogs) and the changelog files on top, then
+# into _site (legal pages, sitemap and 404 included), then
 # deployed with actions/deploy-pages (Settings -> Pages -> Source: GitHub Actions).
 name: GitHup
 
@@ -14,9 +14,6 @@ on:
     paths:
       - .githup.yml
       - .github/workflows/githup.yml
-      - site/**
-      - CHANGELOG.md
-      - VERSION.md
 
 permissions:
   contents: write   # commit data and the README table
@@ -74,8 +71,6 @@ jobs:
           mode: site
           deploy: "false"
           site-dir: _site
-      - name: Add /changelogs and the changelog files
-        run: cp -r site/. CHANGELOG.md VERSION.md _site/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

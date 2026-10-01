@@ -6,7 +6,7 @@
 #   --demo          build from generated example data instead of data/
 #
 # Builds the status page with GitHup from this repo's .githup.yml and data/
-# into .dev/site, adds site/ (/changelogs), CHANGELOG.md and VERSION.md, then
+# into .dev/site, then
 # serves it with python -m http.server. DEV_MODE is on by default so the page
 # shows the dev-only banner.
 #
@@ -48,14 +48,6 @@ if [ "$DEMO" = 1 ]; then
         --incidents-file "$DATA/incidents.json"
 else
     "$PY" -m githup site --config .githup.yml --data-dir "$DATA" --out .dev/site --no-deploy --no-issues
-fi
-# GitHup empties its output folder, so site/ (/changelogs) and the changelog files go on top after.
-cp -r site/. CHANGELOG.md VERSION.md .dev/site/
-
-# The hand-made pages (site/) show the shared dev banner when assets/dev-mode.js says so; the
-# committed copy says false, so only this local build gets true.
-if [ "$DEV_MODE" = "1" ]; then
-    echo "window.DEV_MODE = true;" > ".dev/site/assets/dev-mode.js"
 fi
 
 echo "RoboStux Status (DEV_MODE=$DEV_MODE) at http://127.0.0.1:$PORT"

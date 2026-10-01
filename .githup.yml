@@ -8,14 +8,18 @@ site:
   favicon: https://global.media.robo.st/icon.png
   cname: status.robo.st
   accent: "#a349a4"
-  legal: https://robo.st/legal
-  # The footer's first link: this repo's version (from VERSION.md), pointing at the changelogs.
-  changelog: https://status.robo.st/changelogs/
   footer_links:
     - label: RoboStux
       url: https://robo.st
     - label: GitHub
       url: https://github.com/RoboStux/Status
+
+legal:
+  operator: RoboStux
+  company: "RoboStux is an independent project built and maintained by Leo Ridgwell, operating under the name StuxieDev. It is not operated by any separate company or organization."
+  contact: legal@stuxie.dev
+  host: GitHub Pages
+  effective: 1 October 2026
 
 defaults:
   timeout: 10
