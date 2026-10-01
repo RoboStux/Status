@@ -13,6 +13,9 @@ site:
       url: https://robo.st
     - label: GitHub
       url: https://github.com/RoboStux/Status
+  copyright:
+    holder: StuxieDev
+    start: 2026
 
 legal:
   operator: RoboStux

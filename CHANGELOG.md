@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2026-10-01
+
+### Added
+
+- A copyright line in the footer (Copyright © START–CURRENT HOLDER), from the new `site.copyright` setting in `.githup.yml`; it needs GitHup 1.7.0 or later
+
 ## [1.3.0] - 2026-10-01
 
 ### Added
