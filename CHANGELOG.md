@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.4] - 2026-10-01
+
+### Added
+
+- `.markdownlint.json`, the same markdownlint settings the other Stux status repos and GitHup use
+
+### Fixed
+
+- A double blank line in `CHANGELOG.md`, so the Markdown files pass markdownlint
 
 ## [1.3.3] - 2026-10-01
 
