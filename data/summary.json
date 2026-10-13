@@ -1,7 +1,7 @@
 {
  "version": 1,
  "generator": "GitHup",
- "updated": 1791931944,
+ "updated": 1791932244,
  "name": "RoboStux Status",
  "status": "up",
  "monitors": [
@@ -11,8 +11,8 @@
    "url": "https://robo.st",
    "status": "up",
    "code": 200,
-   "ms": 1049,
-   "checked_at": 1791931943,
+   "ms": 1005,
+   "checked_at": 1791932243,
    "last_change": {
     "at": 1790858728,
     "from": "degraded",
@@ -26,17 +26,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 1422,
+    "24h": 1410,
     "7d": 1053,
     "30d": 969,
     "90d": 969,
     "all": 969
    },
    "totals": {
-    "checks": 451,
-    "available": 451,
-    "ms_sum": 437077,
-    "ms_n": 451,
+    "checks": 452,
+    "available": 452,
+    "ms_sum": 438082,
+    "ms_n": 452,
     "first": 1790684163
    },
    "incident": null
@@ -47,8 +47,8 @@
    "url": "https://global.media.robo.st/logo.png",
    "status": "up",
    "code": 200,
-   "ms": 473,
-   "checked_at": 1791931943,
+   "ms": 480,
+   "checked_at": 1791932243,
    "last_change": {
     "at": 1790684163,
     "from": null,
@@ -69,10 +69,10 @@
     "all": 586
    },
    "totals": {
-    "checks": 451,
-    "available": 451,
-    "ms_sum": 264374,
-    "ms_n": 451,
+    "checks": 452,
+    "available": 452,
+    "ms_sum": 264854,
+    "ms_n": 452,
     "first": 1790684163
    },
    "incident": null
@@ -83,8 +83,44 @@
    "url": "https://node1.robo.st/",
    "status": "up",
    "code": 200,
+   "ms": 618,
+   "checked_at": 1791932243,
+   "last_change": {
+    "at": 1790684163,
+    "from": null,
+    "to": "up"
+   },
+   "uptime": {
+    "24h": 100.0,
+    "7d": 100.0,
+    "30d": 100.0,
+    "90d": 100.0,
+    "all": 100.0
+   },
+   "avg_ms": {
+    "24h": 564,
+    "7d": 616,
+    "30d": 607,
+    "90d": 607,
+    "all": 607
+   },
+   "totals": {
+    "checks": 452,
+    "available": 452,
+    "ms_sum": 274418,
+    "ms_n": 452,
+    "first": 1790684163
+   },
+   "incident": null
+  },
+  {
+   "slug": "bot",
+   "name": "Bot",
+   "url": "https://node1.robo.st/health",
+   "status": "up",
+   "code": 200,
    "ms": 644,
-   "checked_at": 1791931943,
+   "checked_at": 1791932243,
    "last_change": {
     "at": 1790684163,
     "from": null,
@@ -99,52 +135,16 @@
    },
    "avg_ms": {
     "24h": 562,
-    "7d": 616,
-    "30d": 607,
-    "90d": 607,
-    "all": 607
-   },
-   "totals": {
-    "checks": 451,
-    "available": 451,
-    "ms_sum": 273800,
-    "ms_n": 451,
-    "first": 1790684163
-   },
-   "incident": null
-  },
-  {
-   "slug": "bot",
-   "name": "Bot",
-   "url": "https://node1.robo.st/health",
-   "status": "up",
-   "code": 200,
-   "ms": 617,
-   "checked_at": 1791931943,
-   "last_change": {
-    "at": 1790684163,
-    "from": null,
-    "to": "up"
-   },
-   "uptime": {
-    "24h": 100.0,
-    "7d": 100.0,
-    "30d": 100.0,
-    "90d": 100.0,
-    "all": 100.0
-   },
-   "avg_ms": {
-    "24h": 560,
     "7d": 617,
     "30d": 608,
     "90d": 608,
     "all": 608
    },
    "totals": {
-    "checks": 451,
-    "available": 451,
-    "ms_sum": 274203,
-    "ms_n": 451,
+    "checks": 452,
+    "available": 452,
+    "ms_sum": 274847,
+    "ms_n": 452,
     "first": 1790684163
    },
    "incident": null
