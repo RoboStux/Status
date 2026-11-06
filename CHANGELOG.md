@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-1
+
+### Added
+
+- `scripts/badge-icons.py` (copied from StuxGroup/Services, which adapted it from TheRidgwells/Projects), which builds badge-style icons in RoboStux's colours, and `icons/`, the favicon set it builds for the status page
+
+### Changed
+
+- The status page's logo and favicons are now its own badge icon (the RoboStux mark on a round avatar with a heartbeat badge in the bottom-right corner) instead of the plain RoboStux logo and icon. The README's header shows the same icon, with the alt text `RoboStux Status icon`
+
+## v26.11.06
+
+### Changed
+
+- Every monitor on the status page now uses its full name: **RoboStux Website**, **RoboStux CDN**, **RoboStux Node 1** and **RoboStux Bot** instead of `Website`, `CDN`, `Node 1` and `Bot`. Slugs are unchanged, so each monitor keeps its history
+- The Monitors table in `README.md` uses the same names, and `CONTRIBUTING.md` asks for full names on new monitors
+
 ## v26.10.23
 
 ### Added
