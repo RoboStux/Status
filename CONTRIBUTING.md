@@ -11,6 +11,17 @@ Add it under `monitors` in [`.githup.yml`](.githup.yml), add a row to the Monito
 Give each monitor its full name, `RoboStux <name>` (e.g. `RoboStux Website`), never a bare word like `Website`,
 and give it an explicit `slug` so renaming it later keeps its history.
 
+## The icon
+
+The page's logo and favicons are its own badge icon: the RoboStux mark with a heartbeat badge in the bottom-right
+corner, in RoboStux's colours. They live in [`icons/`](icons), which GitHup publishes at the site root. To rebuild them:
+
+```bash
+curl -so /tmp/robostux-icon.png https://global.media.robo.st/icon.png
+python -I scripts/badge-icons.py robostux /tmp/robostux-icon.png icons --size=512 --favicons
+rm icons/robostux-status.png   # the same image as icons/icon-512.png
+```
+
 ## Reporting an incident
 
 Open an issue on this repository's issue tracker. GitHup opens incident issues automatically

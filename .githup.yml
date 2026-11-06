@@ -4,8 +4,11 @@
 site:
   name: RoboStux Status
   description: Keep track of RoboStux's services here.
-  logo: https://global.media.robo.st/logo.png
-  favicon: https://global.media.robo.st/icon.png
+  # Its own badge icon (the RoboStux mark with a heartbeat badge), built by scripts/badge-icons.py into icons/,
+  # which GitHup publishes at the site root.
+  logo: https://status.robo.st/icon-512.png
+  favicon: https://status.robo.st/icon-512.png
+  icons: icons
   cname: status.robo.st
   accent: "#a349a4"
   footer_links:
