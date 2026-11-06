@@ -24,10 +24,10 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 98.17% | 99.55% | 858 ms |
-| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 534 ms |
-| Bot | [RoboStux Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 674 ms |
-| Bot | [RoboStux Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 675 ms |
+| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 98.17% | 99.55% | 860 ms |
+| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 553 ms |
+| Bot | [RoboStux Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 692 ms |
+| Bot | [RoboStux Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 694 ms |
 <!-- githup:end -->
 
 ## Monitors
