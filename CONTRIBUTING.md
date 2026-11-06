@@ -8,6 +8,8 @@ This is the uptime monitor and status page for RoboStux's services, powered by
 Add it under `monitors` in [`.githup.yml`](.githup.yml), add a row to the Monitors table in
 `README.md`, and open a pull request. See the
 [GitHup config reference](https://github.com/StuxGroup/GitHup#config-reference) for all options.
+Give each monitor its full name, `RoboStux <name>` (e.g. `RoboStux Website`), never a bare word like `Website`,
+and give it an explicit `slug` so renaming it later keeps its history.
 
 ## Reporting an incident
 

@@ -32,12 +32,12 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 ## Monitors
 
-| Group | Monitor | URL                                     | Checks                                                                             |
-| ----- | ------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
-| Web   | Website | `https://robo.st`                       | The public website                                                                 |
-| Web   | CDN     | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
-| Bot   | Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
-| Bot   | Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
+| Group | Monitor          | URL                                     | Checks                                                                             |
+| ----- | ---------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+| Web   | RoboStux Website | `https://robo.st`                       | The public website                                                                 |
+| Web   | RoboStux CDN     | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
+| Bot   | RoboStux Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
+| Bot   | RoboStux Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
 
 Every monitor counts any 200-399 answer as up, except Bot, where only a 200 counts. Answers
 slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),

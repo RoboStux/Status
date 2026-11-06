@@ -36,12 +36,12 @@ groups:
   - name: Web
     description: The RoboStux website and its media.
     monitors:
-      - name: Website
+      - name: RoboStux Website
         slug: website
         url: https://robo.st
         description: The public website
 
-      - name: CDN
+      - name: RoboStux CDN
         slug: cdn
         url: https://global.media.robo.st/logo.png
         description: The media CDN
@@ -50,14 +50,14 @@ groups:
     description: The server RoboStux runs on, and the bot itself.
     monitors:
       # The server RoboStux runs on: nginx answers 200 at `/`.
-      - name: Node 1
+      - name: RoboStux Node 1
         slug: node-1
         url: https://node1.robo.st/
         description: The server RoboStux runs on
 
       # RoboStux's own health endpoint (proxied by nginx): 200 once the bot is
       # connected and ready, 503 while it's starting or has lost the gateway.
-      - name: Bot
+      - name: RoboStux Bot
         slug: bot
         url: https://node1.robo.st/health
         expected: [200]
