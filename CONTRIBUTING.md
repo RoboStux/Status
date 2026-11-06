@@ -35,11 +35,6 @@ with a DEV MODE banner (`--no-dev-mode` to turn it off; `--demo` to use generate
 data). It needs a local GitHup checkout: set `GITHUP_DIR`, or it clones GitHup into
 `.githup-cache/`.
 
-## Release process
-
-See `commit.sh`/`commit.bat` for how releases are tagged. Update `CHANGELOG.md` and bump `VERSION.md`
-before running the commit script.
-
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing). To release:
