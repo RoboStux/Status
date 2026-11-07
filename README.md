@@ -24,10 +24,13 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 100.00% | 99.55% | 814 ms |
-| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 516 ms |
-| Bot | [RoboStux Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 662 ms |
-| Bot | [RoboStux Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 664 ms |
+| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 100.00% | 99.55% | 775 ms |
+| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 498 ms |
+| Web | [RoboStux Old Website](https://old.robo.st) | Up | 100.00% | 100.00% | 100.00% | 559 ms |
+| Web | [RoboStux Older Website](https://older.robo.st) | Up | 100.00% | 100.00% | 100.00% | 623 ms |
+| Web | [RoboStux GitHub Pages](https://robostux.github.io) | Up | 100.00% | 100.00% | 100.00% | 135 ms |
+| Bot | [RoboStux Node 1](https://node1.robo.st/) | Up | 100.00% | 100.00% | 100.00% | 629 ms |
+| Bot | [RoboStux Bot](https://node1.robo.st/health) | Up | 100.00% | 100.00% | 100.00% | 630 ms |
 <!-- githup:end -->
 
 ## Monitors
