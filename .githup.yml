@@ -66,18 +66,21 @@ groups:
         description: The robostux.github.io redirect to the GitHub organisation
 
   - name: Bot
-    description: The server RoboStux runs on, and the bot itself.
+    description: RoboStux's shard 1 (shard1.robo.st) and the bot on each platform.
     monitors:
-      # The server RoboStux runs on: nginx answers 200 at `/`.
-      - name: RoboStux Node 1
+      # Every platform at once: 200 when every live platform is connected and ready. Fluxer and
+      # Twitch are listed as coming soon and don't count until they're live. Slug kept from
+      # "RoboStux Node 1" (node1.robo.st, which now redirects here) so its history carries on.
+      - name: RoboStux Shard 1
         slug: node-1
-        url: https://node1.robo.st/
-        description: The server RoboStux runs on
-
-      # RoboStux's own health endpoint (proxied by nginx): 200 once the bot is
-      # connected and ready, 503 while it's starting or has lost the gateway.
-      - name: RoboStux Bot
-        slug: bot
-        url: https://node1.robo.st/health
+        url: https://shard1.robo.st/health/all
         expected: [200]
-        description: The bot's health endpoint (connected and ready)
+        description: Shard 1's health for every platform (Discord; Fluxer and Twitch coming soon)
+
+      # The Discord bot: 200 once it's connected and ready, 503 while it's starting or has
+      # lost the gateway. Slug kept from "RoboStux Bot" so its history carries on.
+      - name: RoboStux for Discord
+        slug: bot
+        url: https://shard1.robo.st/health/discord
+        expected: [200]
+        description: The Discord bot's health (connected and ready)
