@@ -1,0 +1,20 @@
+# Checks every push to main and test, and every pull request: VERSION.md must be a valid Date Version,
+# not in the future, matching the newest CHANGELOG.md entry.
+name: CI
+
+on:
+  push:
+    branches: [main, test]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  version:
+    name: Version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check VERSION.md and CHANGELOG.md
+        run: bash tests/version.sh

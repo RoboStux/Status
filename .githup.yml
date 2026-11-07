@@ -37,7 +37,7 @@ incidents:
 # explicitly, so moving a monitor between groups keeps its history.
 groups:
   - name: Web
-    description: The RoboStux website and its media.
+    description: The RoboStux website, its media, the preserved older sites and the GitHub Pages redirect.
     monitors:
       - name: RoboStux Website
         slug: website
@@ -48,6 +48,22 @@ groups:
         slug: cdn
         url: https://global.media.robo.st/logo.png
         description: The media CDN
+
+      - name: RoboStux Old Website
+        slug: old-website
+        url: https://old.robo.st
+        description: The 2022-2025 website design, preserved at old.robo.st
+
+      - name: RoboStux Older Website
+        slug: older-website
+        url: https://older.robo.st
+        description: The original holding page, preserved at older.robo.st
+
+      # A meta-refresh page, so it answers 200 itself rather than redirecting.
+      - name: RoboStux GitHub Pages
+        slug: github-pages
+        url: https://robostux.github.io
+        description: The robostux.github.io redirect to the GitHub organisation
 
   - name: Bot
     description: The server RoboStux runs on, and the bot itself.
