@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07-1
+
+### Changed
+
+- The bot's server is now **shard1.robo.st** (node1.robo.st redirects there). **RoboStux Node 1** is now **RoboStux Shard 1**, which checks `https://shard1.robo.st/health/all`: every platform, 200 when every live one is ready, with Fluxer and Twitch listed as coming soon. **RoboStux Bot** is now **RoboStux for Discord**, which checks `https://shard1.robo.st/health/discord`. Both only count a 200 as up, and both keep their slugs (`node-1`, `bot`), so their history carries on. The README Monitors table matches
+
 ## v26.11.07
 
 ### Added

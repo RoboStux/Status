@@ -35,17 +35,17 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 ## Monitors
 
-| Group | Monitor                | URL                                     | Checks                                                                             |
-| ----- | ---------------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
-| Web   | RoboStux Website       | `https://robo.st`                       | The public website                                                                 |
-| Web   | RoboStux CDN           | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
-| Web   | RoboStux Old Website   | `https://old.robo.st`                   | The 2022-2025 website design, preserved                                            |
-| Web   | RoboStux Older Website | `https://older.robo.st`                 | The original holding page, preserved                                               |
-| Web   | RoboStux GitHub Pages  | `https://robostux.github.io`            | The redirect to the GitHub organisation (a meta-refresh page that answers 200)     |
-| Bot   | RoboStux Node 1        | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
-| Bot   | RoboStux Bot           | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
+| Group | Monitor                | URL                                     | Checks                                                                                                  |
+| ----- | ---------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Web   | RoboStux Website       | `https://robo.st`                       | The public website                                                                                      |
+| Web   | RoboStux CDN           | `https://global.media.robo.st/logo.png` | The media CDN                                                                                           |
+| Web   | RoboStux Old Website   | `https://old.robo.st`                   | The 2022-2025 website design, preserved                                                                 |
+| Web   | RoboStux Older Website | `https://older.robo.st`                 | The original holding page, preserved                                                                    |
+| Web   | RoboStux GitHub Pages  | `https://robostux.github.io`            | The redirect to the GitHub organisation (a meta-refresh page that answers 200)                          |
+| Bot   | RoboStux Shard 1       | `https://shard1.robo.st/health/all`     | Every platform: 200 when every live one is connected and ready (Discord; Fluxer and Twitch coming soon) |
+| Bot   | RoboStux for Discord   | `https://shard1.robo.st/health/discord` | The Discord bot: 200 when it's connected and ready, 503 otherwise                                       |
 
-Every monitor counts any 200-399 answer as up, except RoboStux Bot, where only a 200 counts. Answers
+Every monitor counts any 200-399 answer as up, except RoboStux Shard 1 and RoboStux for Discord, where only a 200 counts. Answers
 slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
 in two groups that the status page shows as sections, each with a combined status.
 
