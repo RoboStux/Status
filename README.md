@@ -32,12 +32,15 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 ## Monitors
 
-| Group | Monitor          | URL                                     | Checks                                                                             |
-| ----- | ---------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
-| Web   | RoboStux Website | `https://robo.st`                       | The public website                                                                 |
-| Web   | RoboStux CDN     | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
-| Bot   | RoboStux Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
-| Bot   | RoboStux Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
+| Group | Monitor                | URL                                     | Checks                                                                             |
+| ----- | ---------------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+| Web   | RoboStux Website       | `https://robo.st`                       | The public website                                                                 |
+| Web   | RoboStux CDN           | `https://global.media.robo.st/logo.png` | The media CDN                                                                      |
+| Web   | RoboStux Old Website   | `https://old.robo.st`                   | The 2022-2025 website design, preserved                                            |
+| Web   | RoboStux Older Website | `https://older.robo.st`                 | The original holding page, preserved                                               |
+| Web   | RoboStux GitHub Pages  | `https://robostux.github.io`            | The redirect to the GitHub organisation (a meta-refresh page that answers 200)     |
+| Bot   | RoboStux Node 1        | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
+| Bot   | RoboStux Bot           | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
 
 Every monitor counts any 200-399 answer as up, except RoboStux Bot, where only a 200 counts. Answers
 slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
@@ -61,6 +64,8 @@ locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
+
+Releases are made on the `test` branch and go live when its pull request into `main` is merged; see [CONTRIBUTING.md](CONTRIBUTING.md#branches).
 
 ## License
 
