@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-2
+
+### Changed
+
+- `README.md` calls the bot's monitor RoboStux Bot, its full name, and describes `icons/` and `scripts/badge-icons.py`
+- `CONTRIBUTING.md` drops its "Release process" section, which repeated the Versioning section in less detail
+
 ## v26.11.06-1
 
 ### Added

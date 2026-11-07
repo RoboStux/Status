@@ -39,7 +39,7 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 | Bot   | RoboStux Node 1  | `https://node1.robo.st/`                | The server RoboStux runs on (nginx answers 200 at `/`)                             |
 | Bot   | RoboStux Bot     | `https://node1.robo.st/health`          | RoboStux's health endpoint: 200 when the bot is connected and ready, 503 otherwise |
 
-Every monitor counts any 200-399 answer as up, except Bot, where only a 200 counts. Answers
+Every monitor counts any 200-399 answer as up, except RoboStux Bot, where only a 200 counts. Answers
 slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
 in two groups that the status page shows as sections, each with a combined status.
 
@@ -47,7 +47,11 @@ in two groups that the status page shows as sections, each with a combined statu
 
 `.github/workflows/githup.yml` builds the status page into `_site` with GitHup (legal pages, 404 and sitemap included) and
 deploys it with `actions/deploy-pages`, so the repository's **Settings → Pages →
-Source** must be **GitHub Actions**, with `status.robo.st` as the custom domain. Preview it all
+Source** must be **GitHub Actions**, with `status.robo.st` as the custom domain.
+
+The page's logo and favicons are its own badge icon (the RoboStux mark with a heartbeat badge), kept in
+[`icons/`](icons) and published at the site root. [`scripts/badge-icons.py`](scripts/badge-icons.py) builds
+them; see [CONTRIBUTING.md](CONTRIBUTING.md#the-icon). Preview it all
 locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
 
 ## Author
