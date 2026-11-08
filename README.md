@@ -8,7 +8,7 @@
 
 [**Visit the status page →**](https://status.robo.st)
 
-GitHub Actions checks every service every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap). Results are stored as JSON in
+GitHub Actions checks every service regularly. The workflow asks GitHub for a run every 5 minutes, but GitHub runs scheduled workflows best-effort, often far less often, so the status page shows the real check rhythm. When a run is late, it checks up to 4 times, 5 minutes apart, to fill the gap. Results are stored as JSON in
 [`data/`](data), outages open an [Issue](https://github.com/RoboStux/Status/issues) that is
 closed again on recovery, and the status page is published to GitHub Pages at
 [status.robo.st](https://status.robo.st). Its legal pages (the `legal:` block in

@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.08
+
+### Changed
+
+- The README says the services are **checked regularly** instead of "every 5 minutes". The workflow still asks GitHub for a run every 5 minutes, but GitHub runs scheduled workflows best-effort, often only a few times a day, and the status page shows the real check rhythm. The comment on the workflow's schedule says the same. The schedule itself is unchanged
+
 ## v26.11.07-1
 
 ### Changed
