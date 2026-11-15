@@ -33,7 +33,7 @@ Open an issue on this repository's issue tracker. GitHup opens incident issues a
 `./dev-server.sh` (or `dev-server.bat`) builds the page from `data/` and serves it locally,
 with a DEV MODE banner (`--no-dev-mode` to turn it off; `--demo` to use generated example
 data). It needs a local GitHup checkout: set `GITHUP_DIR`, or it clones GitHup into
-`.githup-cache/`.
+`.githup-cache/`. Add `--lan` to open it from a phone or another device on your network: the server then listens on all interfaces instead of `127.0.0.1` only, and prints the addresses to open (usually the `192.168.x.x` one; allow Python through the firewall if asked).
 
 ## Branches
 

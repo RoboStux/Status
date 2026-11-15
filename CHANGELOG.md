@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15
+
+### Added
+
+- `dev-server.sh`/`.bat --lan`: the local preview listens on all interfaces, so phones and other devices on your network can open it, and prints the addresses to open (usually the `192.168.x.x` one). Without it, it still listens on `127.0.0.1` only. Documented in the README and CONTRIBUTING
+
 ## v26.11.08
 
 ### Changed

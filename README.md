@@ -58,7 +58,8 @@ Source** must be **GitHub Actions**, with `status.robo.st` as the custom domain.
 The page's logo and favicons are its own badge icon (the RoboStux mark with a heartbeat badge), kept in
 [`icons/`](icons) and published at the site root. [`scripts/badge-icons.py`](scripts/badge-icons.py) builds
 them; see [CONTRIBUTING.md](CONTRIBUTING.md#the-icon). Preview it all
-locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
+locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`); add `--lan` to open it from a phone or
+another device on your network.
 
 ## Author
 

@@ -1,9 +1,11 @@
 #!/bin/bash
 # RoboStux Status - Local dev server
-# Usage: ./dev-server.sh [--no-dev-mode] [--demo] [port]
+# Usage: ./dev-server.sh [--no-dev-mode] [--demo] [--lan] [port]
 #   port            default: 8000
 #   --no-dev-mode   render the page exactly as production would (no DEV MODE banner)
 #   --demo          build from generated example data instead of data/
+#   --lan           listen on all interfaces so phones/tablets on your network can
+#                   connect (prints the addresses to open); default is 127.0.0.1 only
 #
 # Builds the status page with GitHup from this repo's .githup.yml and data/
 # into .dev/site, then
@@ -17,13 +19,15 @@ set -e
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PORT=8000
 DEMO=0
+HOST=127.0.0.1
 export DEV_MODE=1
 
 for arg in "$@"; do
     case "$arg" in
         --no-dev-mode) export DEV_MODE=0 ;;
         --demo) DEMO=1 ;;
-        ''|*[!0-9]*) echo "Usage: $0 [--no-dev-mode] [--demo] [port]" >&2; exit 1 ;;
+        --lan) HOST=0.0.0.0 ;;
+        ''|*[!0-9]*) echo "Usage: $0 [--no-dev-mode] [--demo] [--lan] [port]" >&2; exit 1 ;;
         *) PORT="$arg" ;;
     esac
 done
@@ -51,4 +55,17 @@ else
 fi
 
 echo "RoboStux Status (DEV_MODE=$DEV_MODE) at http://127.0.0.1:$PORT"
-"$PY" -m http.server "$PORT" --bind 127.0.0.1 --directory .dev/site
+if [ "$HOST" = "0.0.0.0" ]; then
+    # This machine's IPv4 addresses (Windows, macOS or Linux), minus loopback
+    case "$OSTYPE" in
+        msys*|cygwin*|win32*) ADDRS="$(ipconfig | awk -F': *' '/IPv4/{print $2}' | tr -d '\r')" ;;
+        darwin*) ADDRS="$(ifconfig | awk '/inet /{print $2}')" ;;
+        *) ADDRS="$(hostname -I 2>/dev/null)" ;;
+    esac
+    echo "On your local network (--lan), open one of these on the other device:"
+    for a in $ADDRS; do
+        case "$a" in 127.*|'') ;; *) echo "    http://$a:$PORT/" ;; esac
+    done
+    echo "  (usually the 192.168.x.x one; allow Python through the firewall if asked)"
+fi
+"$PY" -m http.server "$PORT" --bind "$HOST" --directory .dev/site
