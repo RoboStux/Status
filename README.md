@@ -58,7 +58,8 @@ Source** must be **GitHub Actions**, with `status.robo.st` as the custom domain.
 The page's logo and favicons are its own badge icon (the RoboStux mark with a heartbeat badge), kept in
 [`icons/`](icons) and published at the site root. [`scripts/badge-icons.py`](scripts/badge-icons.py) builds
 them; see [CONTRIBUTING.md](CONTRIBUTING.md#the-icon). Preview it all
-locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
+locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`); add `--lan` to open it from a phone or
+another device on your network.
 
 ## Author
 
@@ -68,7 +69,7 @@ locally with `./dev-server.sh --demo` (or `dev-server.bat --demo`).
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
 
-Releases are made on the `test` branch and go live when its pull request into `main` is merged; see [CONTRIBUTING.md](CONTRIBUTING.md#branches).
+Work and releases happen on the `test` branch. Changes reach `staging` and then `main` (live) only through pull requests: `test` → `staging` → `main`; see [CONTRIBUTING.md](CONTRIBUTING.md#branches-and-going-live).
 
 ## License
 
