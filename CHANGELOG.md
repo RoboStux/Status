@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15-1
+
+### Changed
+
+- **Branches: `test` → `staging` → `main`.** Work and releases still happen on `test`, but changes now reach `staging` through a pull request from `test`, and `main` (live) only through a pull request from `staging`. Nothing is pushed to `staging` or `main` directly; the status page still deploys only from `main`. `commit.sh`/`commit.bat` refuse to run on `staging` or `main`, and after tagging they print the push command and both `gh pr create` commands. CONTRIBUTING's "Branches and going live" section and the README's Versioning section describe it. CI also runs on `staging`
+
+## v26.11.15
+
+### Added
+
+- `dev-server.sh`/`.bat --lan`: the local preview listens on all interfaces, so phones and other devices on your network can open it, and prints the addresses to open (usually the `192.168.x.x` one). Without it, it still listens on `127.0.0.1` only. Documented in the README and CONTRIBUTING
+
 ## v26.11.08
 
 ### Changed
