@@ -1,7 +1,7 @@
 {
  "version": 1,
  "generator": "GitHup",
- "updated": 1794707432,
+ "updated": 1794707731,
  "name": "RoboStux Status",
  "status": "up",
  "monitors": [
@@ -11,8 +11,8 @@
    "url": "https://robo.st",
    "status": "up",
    "code": 200,
-   "ms": 1166,
-   "checked_at": 1794707431,
+   "ms": 609,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1793395672,
     "from": "down",
@@ -26,17 +26,17 @@
     "all": 99.691
    },
    "avg_ms": {
-    "24h": 1018,
-    "7d": 876,
-    "30d": 1719,
+    "24h": 1006,
+    "7d": 875,
+    "30d": 1718,
     "90d": 1468,
     "all": 1468
    },
    "totals": {
-    "checks": 1621,
-    "available": 1616,
-    "ms_sum": 2372696,
-    "ms_n": 1616,
+    "checks": 1622,
+    "available": 1617,
+    "ms_sum": 2373305,
+    "ms_n": 1617,
     "first": 1790684163
    },
    "incident": null
@@ -47,8 +47,8 @@
    "url": "https://global.media.robo.st/logo.png",
    "status": "up",
    "code": 200,
-   "ms": 707,
-   "checked_at": 1794707431,
+   "ms": 91,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1790684163,
     "from": null,
@@ -62,17 +62,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 477,
-    "7d": 475,
-    "30d": 493,
-    "90d": 524,
-    "all": 524
+    "24h": 465,
+    "7d": 471,
+    "30d": 492,
+    "90d": 523,
+    "all": 523
    },
    "totals": {
-    "checks": 1621,
-    "available": 1621,
-    "ms_sum": 848965,
-    "ms_n": 1621,
+    "checks": 1622,
+    "available": 1622,
+    "ms_sum": 849056,
+    "ms_n": 1622,
     "first": 1790684163
    },
    "incident": null
@@ -83,8 +83,8 @@
    "url": "https://old.robo.st",
    "status": "up",
    "code": 200,
-   "ms": 532,
-   "checked_at": 1794707431,
+   "ms": 372,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1794058915,
     "from": null,
@@ -98,17 +98,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 764,
-    "7d": 699,
-    "30d": 723,
-    "90d": 723,
-    "all": 723
+    "24h": 758,
+    "7d": 698,
+    "30d": 722,
+    "90d": 722,
+    "all": 722
    },
    "totals": {
-    "checks": 228,
-    "available": 228,
-    "ms_sum": 164889,
-    "ms_n": 228,
+    "checks": 229,
+    "available": 229,
+    "ms_sum": 165261,
+    "ms_n": 229,
     "first": 1794058915
    },
    "incident": null
@@ -119,8 +119,8 @@
    "url": "https://older.robo.st",
    "status": "up",
    "code": 200,
-   "ms": 793,
-   "checked_at": 1794707431,
+   "ms": 460,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1794058915,
     "from": null,
@@ -134,17 +134,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 931,
-    "7d": 841,
-    "30d": 867,
-    "90d": 867,
-    "all": 867
+    "24h": 917,
+    "7d": 840,
+    "30d": 865,
+    "90d": 865,
+    "all": 865
    },
    "totals": {
-    "checks": 228,
-    "available": 228,
-    "ms_sum": 197670,
-    "ms_n": 228,
+    "checks": 229,
+    "available": 229,
+    "ms_sum": 198130,
+    "ms_n": 229,
     "first": 1794058915
    },
    "incident": null
@@ -155,8 +155,8 @@
    "url": "https://robostux.github.io",
    "status": "up",
    "code": 200,
-   "ms": 72,
-   "checked_at": 1794707431,
+   "ms": 146,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1794058915,
     "from": null,
@@ -171,16 +171,16 @@
    },
    "avg_ms": {
     "24h": 107,
-    "7d": 105,
-    "30d": 113,
-    "90d": 113,
-    "all": 113
+    "7d": 104,
+    "30d": 114,
+    "90d": 114,
+    "all": 114
    },
    "totals": {
-    "checks": 228,
-    "available": 228,
-    "ms_sum": 25858,
-    "ms_n": 228,
+    "checks": 229,
+    "available": 229,
+    "ms_sum": 26004,
+    "ms_n": 229,
     "first": 1794058915
    },
    "incident": null
@@ -191,8 +191,44 @@
    "url": "https://shard1.robo.st/health/all",
    "status": "up",
    "code": 200,
-   "ms": 535,
-   "checked_at": 1794707431,
+   "ms": 543,
+   "checked_at": 1794707731,
+   "last_change": {
+    "at": 1790684163,
+    "from": null,
+    "to": "up"
+   },
+   "uptime": {
+    "24h": 100.0,
+    "7d": 100.0,
+    "30d": 100.0,
+    "90d": 100.0,
+    "all": 100.0
+   },
+   "avg_ms": {
+    "24h": 563,
+    "7d": 550,
+    "30d": 589,
+    "90d": 596,
+    "all": 596
+   },
+   "totals": {
+    "checks": 1622,
+    "available": 1622,
+    "ms_sum": 967235,
+    "ms_n": 1622,
+    "first": 1790684163
+   },
+   "incident": null
+  },
+  {
+   "slug": "bot",
+   "name": "RoboStux for Discord",
+   "url": "https://shard1.robo.st/health/discord",
+   "status": "up",
+   "code": 200,
+   "ms": 543,
+   "checked_at": 1794707731,
    "last_change": {
     "at": 1790684163,
     "from": null,
@@ -207,52 +243,16 @@
    },
    "avg_ms": {
     "24h": 560,
-    "7d": 550,
-    "30d": 590,
-    "90d": 596,
-    "all": 596
-   },
-   "totals": {
-    "checks": 1621,
-    "available": 1621,
-    "ms_sum": 966692,
-    "ms_n": 1621,
-    "first": 1790684163
-   },
-   "incident": null
-  },
-  {
-   "slug": "bot",
-   "name": "RoboStux for Discord",
-   "url": "https://shard1.robo.st/health/discord",
-   "status": "up",
-   "code": 200,
-   "ms": 531,
-   "checked_at": 1794707431,
-   "last_change": {
-    "at": 1790684163,
-    "from": null,
-    "to": "up"
-   },
-   "uptime": {
-    "24h": 100.0,
-    "7d": 100.0,
-    "30d": 100.0,
-    "90d": 100.0,
-    "all": 100.0
-   },
-   "avg_ms": {
-    "24h": 558,
-    "7d": 548,
+    "7d": 547,
     "30d": 589,
     "90d": 596,
     "all": 596
    },
    "totals": {
-    "checks": 1621,
-    "available": 1621,
-    "ms_sum": 966788,
-    "ms_n": 1621,
+    "checks": 1622,
+    "available": 1622,
+    "ms_sum": 967331,
+    "ms_n": 1622,
     "first": 1790684163
    },
    "incident": null
