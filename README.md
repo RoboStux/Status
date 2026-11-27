@@ -24,13 +24,13 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 97.63% | 99.06% | 857 ms |
-| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 417 ms |
-| Web | [RoboStux Old Website](https://old.robo.st) | Up | 100.00% | 97.63% | 99.22% | 615 ms |
-| Web | [RoboStux Older Website](https://older.robo.st) | Up | 100.00% | 97.63% | 99.22% | 834 ms |
-| Web | [RoboStux GitHub Pages](https://robostux.github.io) | Up | 100.00% | 100.00% | 100.00% | 100 ms |
-| Bot | [RoboStux Shard 1](https://shard1.robo.st/health/all) | Up | 100.00% | 100.00% | 100.00% | 550 ms |
-| Bot | [RoboStux for Discord](https://shard1.robo.st/health/discord) | Up | 100.00% | 100.00% | 100.00% | 548 ms |
+| Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 97.67% | 99.05% | 1049 ms |
+| Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 405 ms |
+| Web | [RoboStux Old Website](https://old.robo.st) | Up | 100.00% | 97.67% | 99.23% | 830 ms |
+| Web | [RoboStux Older Website](https://older.robo.st) | Up | 100.00% | 97.67% | 99.23% | 960 ms |
+| Web | [RoboStux GitHub Pages](https://robostux.github.io) | Up | 100.00% | 100.00% | 100.00% | 104 ms |
+| Bot | [RoboStux Shard 1](https://shard1.robo.st/health/all) | Up | 100.00% | 100.00% | 100.00% | 510 ms |
+| Bot | [RoboStux for Discord](https://shard1.robo.st/health/discord) | Up | 100.00% | 100.00% | 100.00% | 507 ms |
 <!-- githup:end -->
 
 ## Monitors
