@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.28
+
+### Added
+
+- **RoboStux for Fluxer** is checked: `https://shard1.robo.st/health/fluxer`, up on a 200 (the Fluxer bot connected and ready), down on a 503. It's in the Bot group next to RoboStux for Discord
+
+### Changed
+
+- **RoboStux Shard 1** counts Fluxer as well as Discord: its description says Discord and Fluxer, with only Twitch still coming soon. It still checks `https://shard1.robo.st/health/all`, the same as the new combined `https://shard1.robo.st/health`
+
 ## v26.11.15-1
 
 ### Changed

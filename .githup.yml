@@ -68,14 +68,15 @@ groups:
   - name: Bot
     description: RoboStux's shard 1 (shard1.robo.st) and the bot on each platform.
     monitors:
-      # Every platform at once: 200 when every live platform is connected and ready. Fluxer and
-      # Twitch are listed as coming soon and don't count until they're live. Slug kept from
-      # "RoboStux Node 1" (node1.robo.st, which now redirects here) so its history carries on.
+      # Every platform at once: 200 when every live platform is connected and ready (Discord and
+      # Fluxer; Twitch is listed as coming soon and doesn't count until it's live). /health/all is the
+      # same as /health. Slug kept from "RoboStux Node 1" (node1.robo.st, which now redirects here) so
+      # its history carries on.
       - name: RoboStux Shard 1
         slug: node-1
         url: https://shard1.robo.st/health/all
         expected: [200]
-        description: Shard 1's health for every platform (Discord; Fluxer and Twitch coming soon)
+        description: Shard 1's health for every platform (Discord and Fluxer; Twitch coming soon)
 
       # The Discord bot: 200 once it's connected and ready, 503 while it's starting or has
       # lost the gateway. Slug kept from "RoboStux Bot" so its history carries on.
@@ -84,3 +85,11 @@ groups:
         url: https://shard1.robo.st/health/discord
         expected: [200]
         description: The Discord bot's health (connected and ready)
+
+      # The Fluxer bot: 200 once it's connected and ready (ok, or degraded when Fluxer missed a
+      # heartbeat), 503 while it's starting or has lost the gateway.
+      - name: RoboStux for Fluxer
+        slug: fluxer
+        url: https://shard1.robo.st/health/fluxer
+        expected: [200]
+        description: The Fluxer bot's health (connected and ready)

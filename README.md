@@ -42,8 +42,9 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 | Web   | RoboStux Old Website   | `https://old.robo.st`                   | The 2022-2025 website design, preserved                                                                 |
 | Web   | RoboStux Older Website | `https://older.robo.st`                 | The original holding page, preserved                                                                    |
 | Web   | RoboStux GitHub Pages  | `https://robostux.github.io`            | The redirect to the GitHub organisation (a meta-refresh page that answers 200)                          |
-| Bot   | RoboStux Shard 1       | `https://shard1.robo.st/health/all`     | Every platform: 200 when every live one is connected and ready (Discord; Fluxer and Twitch coming soon) |
+| Bot   | RoboStux Shard 1       | `https://shard1.robo.st/health/all`     | Every platform: 200 when every live one is connected and ready (Discord and Fluxer; Twitch coming soon) |
 | Bot   | RoboStux for Discord   | `https://shard1.robo.st/health/discord` | The Discord bot: 200 when it's connected and ready, 503 otherwise                                       |
+| Bot   | RoboStux for Fluxer    | `https://shard1.robo.st/health/fluxer`  | The Fluxer bot: 200 when it's connected and ready, 503 otherwise                                        |
 
 Every monitor counts any 200-399 answer as up, except RoboStux Shard 1 and RoboStux for Discord, where only a 200 counts. Answers
 slower than 15 seconds show as degraded. Monitors are configured in [`.githup.yml`](.githup.yml),
