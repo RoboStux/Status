@@ -26,8 +26,6 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
 | Web | [RoboStux Website](https://robo.st) | Up | 100.00% | 100.00% | 99.53% | 945 ms |
 | Web | [RoboStux CDN](https://global.media.robo.st/logo.png) | Up | 100.00% | 100.00% | 100.00% | 463 ms |
-| Web | [RoboStux Old Website](https://old.robo.st) | Up | 100.00% | 100.00% | 100.00% | 631 ms |
-| Web | [RoboStux Older Website](https://older.robo.st) | Up | 100.00% | 100.00% | 100.00% | 727 ms |
 | Web | [RoboStux GitHub Pages](https://robostux.github.io) | Up | 100.00% | 100.00% | 100.00% | 106 ms |
 | Bot | [RoboStux Shard 1](https://shard1.robo.st/health/all) | Up | 100.00% | 100.00% | 100.00% | 575 ms |
 | Bot | [RoboStux for Discord](https://shard1.robo.st/health/discord) | Up | 100.00% | 100.00% | 100.00% | 573 ms |
@@ -39,8 +37,9 @@ GitHup's version, linking to [GitHup's changelog](https://githup.stux.group/chan
 | ----- | ---------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | Web   | RoboStux Website       | `https://robo.st`                       | The public website                                                                                      |
 | Web   | RoboStux CDN           | `https://global.media.robo.st/logo.png` | The media CDN                                                                                           |
-| Web   | RoboStux Old Website   | `https://old.robo.st`                   | The 2022-2025 website design, preserved                                                                 |
-| Web   | RoboStux Older Website | `https://older.robo.st`                 | The original holding page, preserved                                                                    |
+| Web   | RoboStux Website v3    | `https://v3.robo.st`                    | The 2025-2026 website, archived                                                                         |
+| Web   | RoboStux Website v2    | `https://v2.robo.st`                    | The 2020-2025 website, archived                                                                         |
+| Web   | RoboStux Website v1    | `https://v1.robo.st`                    | The 2018-2020 holding page, archived                                                                    |
 | Web   | RoboStux GitHub Pages  | `https://robostux.github.io`            | The redirect to the GitHub organisation (a meta-refresh page that answers 200)                          |
 | Bot   | RoboStux Shard 1       | `https://shard1.robo.st/health/all`     | Every platform: 200 when every live one is connected and ready (Discord and Fluxer; Twitch coming soon) |
 | Bot   | RoboStux for Discord   | `https://shard1.robo.st/health/discord` | The Discord bot: 200 when it's connected and ready, 503 otherwise                                       |
