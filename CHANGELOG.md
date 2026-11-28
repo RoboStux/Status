@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.28-1
+
+### Added
+
+- **The archived websites** are checked: RoboStux Website v3 (`https://v3.robo.st`, 2025-2026), v2 (`https://v2.robo.st`, 2020-2025) and v1 (`https://v1.robo.st`, the 2018-2020 holding page), in the Web group
+
+### Removed
+
+- The RoboStux Old Website and RoboStux Older Website monitors and their history: those addresses are retired, and the same sites are now the v2 and v1 archives
+
 ## v26.11.28
 
 ### Added
